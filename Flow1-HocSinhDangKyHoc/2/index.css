@@ -1,0 +1,131 @@
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+/* navbar start */
+
+.bell {
+    background: rgba(0, 0, 0, 0) url(../../assets/img/chuong.png) no-repeat scroll center center;
+}
+
+
+.book {
+    background: rgba(0, 0, 0, 0) url(../../assets/img/book.png) no-repeat scroll center center;
+}
+
+
+.user {
+    background: rgba(0, 0, 0, 0) url(../../assets/img/user.png) no-repeat scroll center center;
+}
+
+.sign-out {
+    background: rgba(0, 0, 0, 0) url(../../assets/img/sign-out.png) no-repeat scroll center center;
+}
+
+
+.menu-icon {
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 25px;
+}
+
+/* navbar end */
+
+/* hero start */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #eee;
+}
+
+.grade-wrapper {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.hero .grade {
+    padding: 100px;
+    background: red;
+}
+
+/* hero end */
+
+/* custom breadcrumb start */
+.custom-breadcrumb {
+    background: transparent;
+}
+
+.custom-btn-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* custom breadcrumb end */
+
+/* product start */
+
+.product-wrapper {
+    display: grid;
+    grid-gap: 1rem;
+    background: #eee;
+    /* padding: 2rem; */
+}
+
+.product-row {
+    display: flex;
+    justify-content: center;
+}
+
+.guide-container {
+    background: lightcoral;
+}
+
+.product-container {
+    background: greenyellow;
+}
+
+/* product end */
+
+/* direct-group start */
+.direct-group {
+    display: flex;
+    justify-content: space-between;
+    background: lightpink;
+}
+
+/* direct-group end */
+
+/* footer start */
+
+.footer {
+    background: lightcoral;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-items {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-gap: .5rem;
+}
+
+.footer-item {
+    /* padding: 5px; */
+}
+
+/* footer end */
