@@ -117,6 +117,7 @@ a:hover {
     position: relative;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 .class-card .number {
