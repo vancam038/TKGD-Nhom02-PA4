@@ -29,16 +29,19 @@
 /* momo popup start */
 .momo-popup-wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     height: 100%;
     width: 100%;
 }
 
+/* left-container start */
+
 .left-container {
     display: grid;
-    grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 2fr;
     grid-template-areas:
         "order-timeout"
+        "order-distributor"
         "order-total-price"
         "order-info"
         "order-id"
@@ -48,6 +51,13 @@
 .order-timeout {
     grid-area: order-timeout;
     background: lightcoral;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-distributor {
+    grid-area: order-distributor;
+    background: lightsalmon;
 }
 
 .order-total-price {
@@ -69,6 +79,10 @@
     grid-area: back-to;
     background: lightskyblue;
 }
+
+/* left-container end */
+
+/* right-container start */
 
 .right-container {
     display: grid;
@@ -92,6 +106,15 @@
 .signup-section {
     grid-area: signup-section;
     background: blue;
+}
+
+/* right-container end */
+
+.order-timeout .timer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* momo popup end */
