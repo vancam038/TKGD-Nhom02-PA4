@@ -5,7 +5,7 @@ a:hover {
 
 .wrapper {
     display: grid;
-    grid-gap: 1rem;
+    /* grid-gap: 1rem; */
 }
 
 /* navbar start */
@@ -45,7 +45,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #eee;
+    background: #EFFBFF;
 }
 
 .grade-wrapper {
@@ -61,6 +61,13 @@ a:hover {
 .hero .grade {
     padding: 100px;
     background: red;
+}
+
+.custom-card {
+    position: relative;
+    box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
+    border-radius: .375rem;
+    transition: .3s;
 }
 
 /* hero end */
