@@ -8,27 +8,6 @@ a:hover {
     /* grid-gap: 1rem; */
 }
 
-/* navbar start */
-
-.bell {
-    background: rgba(0, 0, 0, 0) url(../../assets/img/chuong.png) no-repeat scroll center center;
-}
-
-
-.book {
-    background: rgba(0, 0, 0, 0) url(../../assets/img/book.png) no-repeat scroll center center;
-}
-
-
-.user {
-    background: rgba(0, 0, 0, 0) url(../../assets/img/user.png) no-repeat scroll center center;
-}
-
-.sign-out {
-    background: rgba(0, 0, 0, 0) url(../../assets/img/sign-out.png) no-repeat scroll center center;
-}
-
-
 .menu-icon {
     display: block;
     height: 100%;
@@ -45,7 +24,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #EFFBFF;
 }
 
 .grade-wrapper {
@@ -60,7 +38,6 @@ a:hover {
 
 .hero .grade {
     padding: 100px;
-    background: red;
 }
 
 .custom-card {
@@ -90,7 +67,7 @@ a:hover {
 .product-wrapper {
     display: grid;
     grid-gap: 1rem;
-    background: #eee;
+    /*background: #eee;*/
     /* padding: 2rem; */
 }
 
@@ -99,13 +76,6 @@ a:hover {
     justify-content: center;
 }
 
-.guide-container {
-    background: lightcoral;
-}
-
-.product-container {
-    background: greenyellow;
-}
 
 /* product end */
 
@@ -113,7 +83,6 @@ a:hover {
 .direct-group {
     display: flex;
     justify-content: space-between;
-    background: lightpink;
 }
 
 /* direct-group end */
@@ -121,7 +90,6 @@ a:hover {
 /* footer start */
 
 .footer {
-    background: lightcoral;
     display: flex;
     justify-content: space-between;
 }
@@ -137,3 +105,103 @@ a:hover {
 }
 
 /* footer end */
+.hero {
+    background: white;
+    border-radius: 10px;
+}
+.custom-card {
+    border-radius: 10px;
+    margin: 30px 0 20px;
+}
+.class-card {
+    position: relative;
+    color: white;
+    border-radius: 10px;
+
+}
+.class-card .number {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid rgba(255,255,255,0.8);
+    line-height: 50px;
+    font-size: 20px;
+    box-sizing: content-box;
+    color: white;
+}
+.class-card h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 30px auto;
+    color: white;
+}
+.class-card.blue-card .number{
+    background: #01a9ac;
+}
+.class-card >a {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    background: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 15px;
+}
+.class-card.blue-card >a{
+    color: #01a9ac;
+}
+
+.class-card.red-card .number{
+    background: #fe5d70;
+}
+.class-card.red-card >a{
+    color: #fe5d70;
+}
+.class-card.green-card .number{
+    background: #0ac282;
+}
+.class-card.green-card >a{
+    color: #0ac282;
+}
+
+.custom-breadcrumb {
+  margin-bottom: 20px;
+}
+.custom-breadcrumb a.active {
+    background: rgb(64, 78, 103, 0.7);
+}
+.custom-breadcrumb a {
+    transform: skewX(-25deg);
+    background: #404E67;
+    margin: 0 10px;
+}
+.custom-breadcrumb a >span {
+    transform: skewX(25deg);
+    color: white;
+    font-style: normal;
+    display: block;
+}
+.custom-breadcrumb a >span >span {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.8);
+    color: #404E67;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.product-wrapper {
+    background: white;
+    border-radius: 10px;
+}

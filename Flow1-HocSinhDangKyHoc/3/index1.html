@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../assets/css/all.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../assets/css/all.css">
     <title>Register</title>
 </head>
 
@@ -14,65 +14,68 @@
     <!-- wrapper start -->
     <div class="wrapper">
         <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark header">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">HSE</a>
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="../../assets/img/logo.png" alt="" style="height: 40px">
+        </a>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
-                </form>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <form class="form-inline my-2 my-lg-0">
+                <div class="form-content">
+                    <input class="search-header" type="input" placeholder="Type your search here" aria-label="Search">
+                    <i class="fa-search"></i>
+                </div>
+            </form>
 
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link menu-icon bell" href="#"></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link menu-icon book" href="#"></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link menu-icon user" href="#"></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link menu-icon sign-out" href="#">
-                        </a>
-                    </li>
-                </ul>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link menu-icon fa-bell" href="#"></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link menu-icon fa-book" href="#"></a>
+                </li>
+                <li class="nav-item active menu-item-name">
+                    <a class="nav-link menu-icon" href="#">
+                        <i class="fa-user">Song Văn Cẩm</i>
+                        <div class="submenu">
+                            <a href="#">Logout</a>
+                        </div>
+                    </a>
+                </li>
+            </ul>
 
-            </div>
-        </nav>
-        <!-- navbar end -->
+        </div>
+    </nav>
+    <!-- navbar end -->
 
+    <div class="main-content first-step">
         <!-- hero start -->
-        <div class="hero px-3 py-3">
+        <div class="hero p-3 mb-3">
             <h3>Tham khảo chương trình học của chúng tôi</h3>
             <div class="grade-wrapper">
-                <div class="card border-dark text-center" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">Dark card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                <div class="card w-25 custom-card text-center">
+                    <div class="card-body text-dark class-card blue-card blue-gradient">
+                        <div class="number">1</div>
+                        <h2>Lớp 10</h2>
+                        <a href="#">Xem thêm</a>
                     </div>
                 </div>
-                <div class="card border-dark text-center" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">Dark card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                <div class="card w-25 custom-card text-center">
+                    <div class="card-body text-dark class-card red-card red-gradient">
+                        <div class="number">2</div>
+                        <h2>Lớp 11</h2>
+                        <a href="#">Xem thêm</a>
                     </div>
                 </div>
-                <div class="card border-dark text-center" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">Dark card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                <div class="card w-25 custom-card text-center">
+                    <div class="card-body text-dark class-card green-card green-gradient">
+                        <div class="number">3</div>
+                        <h2>Lớp 12</h2>
+                        <a href="#">Xem thêm</a>
                     </div>
                 </div>
             </div>
@@ -82,15 +85,15 @@
         <!-- breadcrumb start -->
         <div class="custom-breadcrumb">
             <div class="btn-group custom-btn-group">
-                <a href="#" class="btn btn-success">1/ Chọn chương trình học</a>
-                <a href="#" class="btn btn-success">2/ Xác nhận chương trình học</a>
-                <a href="#" class="btn btn-success">3/ Thanh toán</a>
+                <a href="#" class="btn active"><span><span>1</span> Chọn chương trình học</span></a>
+                <a href="#" class="btn"><span><span>2</span> Xác nhận chương trình học</span></a>
+                <a href="#" class="btn"><span><span>3</span> Thanh toán</span></a>
             </div>
         </div>
         <!-- breadcrumb end -->
 
         <!-- product wrapper start -->
-        <div class="product-wrapper px-3 py-3">
+        <div class="product-wrapper px-3 py-3" id="product">
             <h4>Chọn phương thức thanh toán</h4>
 
             <!-- tiếp tục code tại đây -->
@@ -99,7 +102,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        additional content. This content is a little bit longer.</p>
                     </div>
                     <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
                 </div>
@@ -107,7 +110,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        additional content. This content is a little bit longer.</p>
                     </div>
                     <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
                 </div>
@@ -115,7 +118,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        additional content. This content is a little bit longer.</p>
                     </div>
                     <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
                 </div>
@@ -123,7 +126,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        additional content. This content is a little bit longer.</p>
                     </div>
                     <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
                 </div>
@@ -131,7 +134,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        additional content. This content is a little bit longer.</p>
                     </div>
                     <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
                 </div>
@@ -139,14 +142,11 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        additional content. This content is a little bit longer.</p>
                     </div>
                     <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
                 </div>
             </div>
-
-
-
 
             <div class="direct-group">
                 <button class="btn btn-secondary">Chọn lại</button>
@@ -154,7 +154,6 @@
             </div>
         </div>
         <!-- product wrapper end -->
-
         <div class="footer">
             <div class="footer-items">
                 <a href="#" class="footer-item px-2 py-2">Cộng đồng</a>
@@ -171,10 +170,10 @@
         </div>
     </div>
     <!-- wrapper end -->
-
-    <script src="../../assets/js/jquery-3.2.1.min.js"></script>
-    <script src="../../assets/js/popper.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
+</div>
+<script src="../../assets/js/jquery-3.2.1.min.js"></script>
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
