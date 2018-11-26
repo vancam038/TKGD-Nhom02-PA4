@@ -1,0 +1,97 @@
+.bank-transfer-wrapper {
+    width: 100%;
+}
+
+.atm-card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.payment {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.install {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* momo popup start */
+.momo-popup-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+    width: 100%;
+}
+
+.left-container {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-areas:
+        "order-timeout"
+        "order-total-price"
+        "order-info"
+        "order-id"
+        "back-to";
+}
+
+.order-timeout {
+    grid-area: order-timeout;
+    background: lightcoral;
+}
+
+.order-total-price {
+    grid-area: order-total-price;
+    background: lightpink;
+}
+
+.order-info {
+    grid-area: order-info;
+    background: lightseagreen;
+}
+
+.order-id {
+    grid-area: order-id;
+    background: lightslategrey;
+}
+
+.back-to {
+    grid-area: back-to;
+    background: lightskyblue;
+}
+
+.right-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "logos-section"
+        "qrcode-section"
+        "signup-section";
+}
+
+.logos-section {
+    grid-area: logos-section;
+    background: red;
+}
+
+.qrcode-section {
+    grid-area: qrcode-section;
+    background: yellow;
+}
+
+.signup-section {
+    grid-area: signup-section;
+    background: blue;
+}
+
+/* momo popup end */
