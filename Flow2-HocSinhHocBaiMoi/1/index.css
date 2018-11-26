@@ -43,10 +43,6 @@ a:hover {
 
 /* hero start */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background: #EFFBFF;
 }
 
@@ -73,6 +69,58 @@ a:hover {
 }
 
 /* hero end */
+
+/* panel start   */
+
+.panel-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "subject-panel chapter-panel lesson-panel";
+    grid-gap: 30px;
+}
+
+.subject-panel {
+    grid-area: subject-panel;
+    background: lawngreen;
+}
+
+.subject-panel-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+.chapter-panel {
+    grid-area: chapter-panel;
+    background: lightpink;
+}
+
+.chapter-panel-inner {
+    display: grid;
+    grid-gap: .75rem;
+}
+
+.lesson-panel {
+    grid-area: lesson-panel;
+    background: lightseagreen
+}
+
+.lesson-panel-inner {
+    display: grid;
+    grid-gap: .75rem;
+}
+
+/* panel end */
+
+/* direct-group start */
+.direct-group {
+    display: flex;
+    justify-content: space-between;
+    background: lightpink;
+}
+
+/* direct-group end */
 
 /* footer start */
 
