@@ -268,13 +268,13 @@
   font-size: 15px;
 
 }
-.footer a:after {
+/* .footer a:after {
   content: '\f105';
   display: inline-block;
   color: #404E67;
   font: 15px 'FontAwesome';
   margin-left: 15px;
-}
+} */
 .footer a:last-child:after {
   display: none; 
 }
