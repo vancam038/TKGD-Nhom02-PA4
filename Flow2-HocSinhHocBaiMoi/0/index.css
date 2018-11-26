@@ -1,0 +1,95 @@
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    /* grid-gap: 1rem; */
+    height: 100%;
+    grid-template-rows: max-content 1fr max-content;
+}
+
+/* navbar start */
+
+.bell {
+    background: rgba(0, 0, 0, 0) url(../../assets/img/chuong.png) no-repeat scroll center center;
+}
+
+
+.book {
+    background: rgba(0, 0, 0, 0) url(../../assets/img/book.png) no-repeat scroll center center;
+}
+
+
+.user {
+    background: rgba(0, 0, 0, 0) url(../../assets/img/user.png) no-repeat scroll center center;
+}
+
+.sign-out {
+    background: rgba(0, 0, 0, 0) url(../../assets/img/sign-out.png) no-repeat scroll center center;
+}
+
+
+.menu-icon {
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+/* navbar end */
+
+/* hero start */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #EFFBFF;
+}
+
+.option-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    width: auto;
+    /* display: grid;
+    justify-content: space-around; */
+
+}
+
+.hero .grade {
+    padding: 100px;
+    background: red;
+}
+
+.custom-card {
+    position: relative;
+    box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
+    border-radius: .375rem;
+    transition: .3s;
+}
+
+/* hero end */
+
+/* footer start */
+
+.footer {
+    background: lightcoral;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-items {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-gap: .5rem;
+}
+
+.footer-item {
+    /* padding: 5px; */
+}
+
+/* footer end */
