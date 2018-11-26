@@ -13,38 +13,84 @@
 <body>
     <!-- pop-up momo start -->
     <div class="momo-popup-wrapper">
-        <div class="left-container">
-            <div class="order-timeout px-2 py-2">
-                <h5>Đơn hàng hết hạn sau: </h5>
-                <div class="timer">
-                    <h4>02:07</h4>
+        <div class="momo-popup-wrapper-inner">
+            <div class="left-container">
+                <div class="d-flex flex-column order-timeout px-2 py-2">
+                    <h5>Đơn hàng hết hạn sau:</h5>
+                    <div class="content-section">
+                        <h1>02:07</h1>
+                    </div>
+                </div>
+                <div class="d-flex flex-column order-distributor px-2 py-2">
+                    <h5>Nhà cung cấp:</h5>
+                    <div class="content-section">
+                        <h4>HSE</h4>
+                    </div>
+                </div>
+                <div class="d-flex flex-column order-total-price px-2 py-2">
+                    <h5>Số tiền:</h5>
+                    <div class="content-section">
+                        <h4>1.260.000đ</h4>
+                    </div>
+                </div>
+                <div class="d-flex flex-column order-info px-2 py-2">
+                    <h5>Thông tin:</h5>
+                    <div class="content-section">
+                        <h4>Thanh toán học phí</h4>
+                    </div>
+                </div>
+                <div class="d-flex flex-column order-id px-2 py-2">
+                    <h5>Đơn hàng:</h5>
+                    <div class="content-section">
+                        <h4>19722</h4>
+                    </div>
+                </div>
+                <div class="d-flex flex-column back-to px-2 py-2">
+                    <div class="content-section">
+                        <button type="button" class="btn btn-lg btn-outline-success">Quay lại</button>
+                    </div>
                 </div>
             </div>
-            <div class="order-distributor">
+            <div class="right-container">
+                <div class="logos-section d-flex justify-content-between px-2 py-2">
+                    <img src="../../assets/img/school.png" alt="">
+                    <img src="../../assets/img/momo.png" alt="">
+                </div>
 
-            </div>
-            <div class="order-total-price">
+                <div class="d-flex justify-content-center align-items-center qrcode-section">
+                    <div class="d-flex flex-column align-items-center qrcode-section-inner">
+                        <h2>Quét mã để thanh toán</h2>
+                        <img class="mb-1" src="../../assets/img/qrcode.jpeg" alt="">
+                        <div class="mb-4" style="text-align: center">
+                            <span>Sử dụng App <b>MoMo</b> hoặc</span><br>
+                            <span>ứng dụng Camera hỗ trợ QR code để quét mã.</span>
+                        </div>
 
-            </div>
-            <div class="order-info">
+                        <div class="d-flex align-items-center">
+                            <!-- <div class="loader"></div> -->
+                            <div class="lds-spinner mr-2">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <span>Đang chờ bạn quét</span>
+                        </div>
 
-            </div>
-            <div class="order-id">
-
-            </div>
-            <div class="back-to">
-
-            </div>
-        </div>
-        <div class="right-container">
-            <div class="logos-section">
-
-            </div>
-            <div class="qrcode-section">
-
-            </div>
-            <div class="signup-section">
-
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center signup-section py-2">
+                    <div class="my-2">Đăng ký tài khoản MoMo và thanh toán lần đầu hoặc <a href="#">Đăng nhập</a> </div>
+                    <button type="button" class="btn btn-outline-danger">Đăng ký ngay</button>
+                </div>
             </div>
         </div>
     </div>

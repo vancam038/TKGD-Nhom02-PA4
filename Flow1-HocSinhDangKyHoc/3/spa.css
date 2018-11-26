@@ -7,38 +7,34 @@
     justify-content: center;
 }
 
-.button-group {
-    display: flex;
-    justify-content: space-around;
-}
-
 .payment {
     width: max-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .install {
     width: max-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* momo popup start */
 .momo-popup-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.momo-popup-wrapper-inner {
     display: grid;
     grid-template-columns: 1fr 3fr;
     height: 100%;
-    width: 100%;
 }
 
 /* left-container start */
 
 .left-container {
     display: grid;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr auto;
     grid-template-areas:
         "order-timeout"
         "order-distributor"
@@ -51,8 +47,6 @@
 .order-timeout {
     grid-area: order-timeout;
     background: lightcoral;
-    display: flex;
-    flex-direction: column;
 }
 
 .order-distributor {
@@ -86,7 +80,7 @@
 
 .right-container {
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: auto 5fr auto;
     grid-template-areas:
         "logos-section"
         "qrcode-section"
@@ -95,26 +89,128 @@
 
 .logos-section {
     grid-area: logos-section;
-    background: red;
+    background: lightgray;
 }
 
 .qrcode-section {
     grid-area: qrcode-section;
     background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .signup-section {
     grid-area: signup-section;
-    background: blue;
+    background: lightgoldenrodyellow;
 }
 
 /* right-container end */
 
-.order-timeout .timer {
+.content-section {
     flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* spinner  start */
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-spinner div {
+    transform-origin: 32px 32px;
+    animation: lds-spinner 1.2s linear infinite;
+}
+
+.lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 29px;
+    width: 5px;
+    height: 14px;
+    border-radius: 20%;
+    background: #000;
+}
+
+.lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+}
+
+.lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+}
+
+.lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+}
+
+.lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+}
+
+.lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+}
+
+.lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+}
+
+.lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+}
+
+.lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+}
+
+.lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+}
+
+.lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+}
+
+.lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+}
+
+.lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+}
+
+@keyframes lds-spinner {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* spinner end */
 
 /* momo popup end */
