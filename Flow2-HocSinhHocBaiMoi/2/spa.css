@@ -1,0 +1,26 @@
+.test-section-wrapper-inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10rem;
+}
+
+.list-q-number {
+    display: grid;
+    grid-template-columns: repeat(8, max-content);
+    grid-gap: 1rem;
+}
+
+.list-q-number .item {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+
+.msg-section img {
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
