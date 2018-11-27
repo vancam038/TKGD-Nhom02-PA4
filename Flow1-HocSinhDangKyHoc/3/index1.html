@@ -85,9 +85,9 @@
         <!-- breadcrumb start -->
         <div class="custom-breadcrumb">
             <div class="btn-group custom-btn-group">
-                <a href="#" class="btn active"><span><span>1</span> Chọn chương trình học</span></a>
+                <a href="#" class="btn"><span><span>1</span> Chọn chương trình học</span></a>
                 <a href="#" class="btn"><span><span>2</span> Xác nhận chương trình học</span></a>
-                <a href="#" class="btn"><span><span>3</span> Thanh toán</span></a>
+                <a href="#" class="btn active"><span><span>3</span> Thanh toán</span></a>
             </div>
         </div>
         <!-- breadcrumb end -->
@@ -97,57 +97,156 @@
             <h4>Chọn phương thức thanh toán</h4>
 
             <!-- tiếp tục code tại đây -->
-            <div class="card-group">
-                <div class="card text-center">
+            <div class="card-group checkout-method">
+                <div class="card text-center" id="bank-transfer">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title blue-text">Chuyển khoản ngân hàng</h5>
+                        <div class="extra blue-bg">+ 10%</div>
                     </div>
-                    <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
+                    <div class="card-img-top">
+                        <img src="../../assets/img/chain.png" alt="">
+                    </div>
                 </div>
-                <div class="card text-center">
+                <div class="card text-center" id="atm-transfer">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title red-text">Thẻ ATM</h5>
+                        <div class="extra red-bg">+ 10%</div>
                     </div>
-                    <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
+                    <div class="card-img-top">
+                        <img src="../../assets/img/atm.jpg" alt="">
+                    </div>
                 </div>
-                <div class="card text-center">
+                <div class="card text-center" id="visa-transfer">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title green-text">Thẻ Visa / Master Card</h5>
+                        <div class="extra green-bg">+ 10%</div>
                     </div>
-                    <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
+                    <div class="card-img-top">
+                        <img src="../../assets/img/visa.jpg" alt="">
+                    </div>
                 </div>
-                <div class="card text-center">
+                <div class="card text-center" id="momo-transfer">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title orange-text">Momo</h5>
+                        <div class="extra orange-bg">+ 10%</div>
                     </div>
-                    <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
+                    <div class="card-img-top">
+                        <img src="../../assets/img/momo.jpg" alt="">
+                    </div>
                 </div>
-                <div class="card text-center">
+                <div class="card text-center" id="zalo-transfer">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title blue-text">Zalo Pay</h5>
+                        <div class="extra blue-bg">+ 10%</div>
                     </div>
-                    <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
+                    <div class="card-img-top">
+                        <img src="../../assets/img/zalo.png" alt="">
+                    </div>
                 </div>
-                <div class="card text-center">
+                <div class="card text-center" id="hse-transfer">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title red-text">Thẻ HSE</h5>
                     </div>
-                    <img class="card-img-top" src="https://loremflickr.com/320/240/dog" alt="Card image cap">
+                    <div class="card-img-top">
+                        <img src="../../assets/img/logo.png" alt="">
+                    </div>
                 </div>
             </div>
+            <div class="product-container px-3 py-3">
+                <div class="bank-transfer hidden">
+                    <ul class="navbar-nav">
+                        <li>Bạn vui lòng thực hiện các bước sau: </li>
+                        <li>Bước 1: Nộp tiền chuyển khoản vào tài khoản ngân hàng của HSE </li>
+                        <li>1. Tên người thụ hưởng</li>
+                        <li>2. Số tiền</li>
+                        <li>3. Nội dung chuyển tiền (mã giao dịch): 19572</li>
+                        <li>4. Số tài khoản của HSE như sau:
+                            <ul>
+                                <li>STK: 0451001337688 tại Vietcombank - chi nhánh Lữ Gia, TPHCM</li>
+                                <li>STK: 1251000590546 tại BIDV- chi nhánh Lữ Gia, TPHCM</li>
+                                <li>STK: 566688588 tại TPBank - chi nhánh Lữ Gia, TPHCM</li>
+                                <li>STK: 11700145510 tại Vietin Bank - chi nhánh Lữ Gia, TPHCM</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="atm-transfer hidden">
+                    <div class="container">
+                        <div class="row">
+                            <form class="col-sm-4">
+                                <div class="form-group row">
+                                    <label for="first_name" class="col-xs-3 col-form-label mr-auto">Chọn ngân hàng:</label>
+                                    <div class="col-xs-9">
+                                        <select class="form-control" style="width: 200px">
+                                            <option value="1">BIDV</option>
+                                            <option value="2">Maritime Bank</option>
+                                            <option value="3">TPBank</option>
+                                            <option value="3">Vietcombank</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập tên chủ thẻ:</label>
+                                    <div class="col-xs-9">
+                                        <input type="text" class="form-control" id="last_name" name="last_name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập số thẻ:</label>
+                                    <div class="col-xs-9">
+                                        <input type="text" class="form-control" id="last_name" name="last_name">
+                                    </div>
+                                </div>
 
+                                <div class="form-group row justify-content-around">
+                                    <button class="btn btn-basic">Hủy</button>
+                                    <button class="btn btn-success">Thanh toán</button>
+                                </div>
+                            </form>
+                            <div class="atm-card-img d-flex justify-content-center col-sm-8">
+                                <img src="../../assets/img/bidv.jpg" alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visa-transfer">
+                    <div class="container">
+                        <div class="row">
+                            <form class="col-sm-4">
+                                <div class="form-group row">
+                                    <label for="first_name" class="col-xs-3 col-form-label mr-auto">Chọn ngân hàng:</label>
+                                    <div class="col-xs-9">
+                                        <select class="form-control" style="width: 200px">
+                                            <option value="1">Master</option>
+                                            <option value="2">Visa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập tên chủ thẻ:</label>
+                                    <div class="col-xs-9">
+                                        <input type="text" class="form-control" id="last_name" name="last_name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập số thẻ:</label>
+                                    <div class="col-xs-9">
+                                        <input type="text" class="form-control" id="last_name" name="last_name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row justify-content-around">
+                                    <button class="btn btn-basic">Hủy</button>
+                                    <button class="btn btn-success">Thanh toán</button>
+                                </div>
+                            </form>
+                            <div class="atm-card-img d-flex justify-content-center col-sm-4">
+                                <!-- <img src="../../assets/img/master.jpg" alt="Card image cap"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="direct-group">
                 <button class="btn btn-secondary">Chọn lại</button>
                 <button class="btn btn-success">Tiếp tục</button>

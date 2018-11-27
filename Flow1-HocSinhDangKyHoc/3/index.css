@@ -10,23 +10,7 @@ a:hover {
 
 /* navbar start */
 
-.bell {
-    background: rgba(0, 0, 0, 0) url(../../assets/img/chuong.png) no-repeat scroll center center;
-}
 
-
-.book {
-    background: rgba(0, 0, 0, 0) url(../../assets/img/book.png) no-repeat scroll center center;
-}
-
-
-.user {
-    background: rgba(0, 0, 0, 0) url(../../assets/img/user.png) no-repeat scroll center center;
-}
-
-.sign-out {
-    background: rgba(0, 0, 0, 0) url(../../assets/img/sign-out.png) no-repeat scroll center center;
-}
 
 
 .menu-icon {
@@ -82,21 +66,12 @@ a:hover {
 .product-wrapper {
     display: grid;
     grid-gap: 1rem;
-    background: #eee;
     /* padding: 2rem; */
 }
 
 .product-row {
     display: flex;
     justify-content: center;
-}
-
-.guide-container {
-    background: lightcoral;
-}
-
-.product-container {
-    background: greenyellow;
 }
 
 /* product end */

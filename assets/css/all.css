@@ -282,3 +282,60 @@
 .direct-group a{
   color: white!important;
 }
+
+.blue-text{
+  color: #01a9ac;
+}
+.red-text{
+  color: #fe5d70;
+}
+.green-text{
+  color: #0ac282;
+}
+.orange-text{
+  color: #fe9365;
+}
+
+.blue-bg{
+  background: #01a9ac;
+}
+.red-bg{
+  background: #fe5d70;
+}
+.green-bg{
+  background: #0ac282;
+}
+.orange-bg{
+  background: #fe9365;
+}
+
+.checkout-method img {
+  width: 80%;
+}
+
+.checkout-method .card {
+  position: relative;
+}
+
+.checkout-method .extra {
+  width: 60%;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-img-top {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+
+.visa-transfer img {
+  width: 100%;
+}
