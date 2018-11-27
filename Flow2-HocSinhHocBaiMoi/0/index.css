@@ -3,6 +3,10 @@ a:hover {
     text-decoration: none;
 }
 
+.card {
+    user-select: none;
+}
+
 .wrapper {
     display: grid;
     /* grid-gap: 1rem; */
@@ -47,7 +51,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #EFFBFF;
+    /* background: #EFFBFF; */
 }
 
 .option-wrapper {
@@ -65,19 +69,21 @@ a:hover {
     background: red;
 }
 
-.custom-card {
+.custom-card-1 {
     position: relative;
-    box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
+    /* box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2); */
     border-radius: .375rem;
     transition: .3s;
+    cursor: pointer;
 }
+
+
 
 /* hero end */
 
 /* footer start */
 
 .footer {
-    background: lightcoral;
     display: flex;
     justify-content: space-between;
 }

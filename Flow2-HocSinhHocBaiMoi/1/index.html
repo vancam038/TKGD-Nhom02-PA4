@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="../../assets/css/all.css"> -->
+    <link rel="stylesheet" href="../../assets/css/all.css">
     <link rel="stylesheet" href="index.css">
     <title>Register</title>
 </head>
@@ -14,33 +14,36 @@
     <!-- wrapper start -->
     <div class="wrapper">
         <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="width: auto">
+        <nav class="navbar navbar-expand-lg navbar-dark header">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">
-                <img src="../../assets/img/school.png" alt="" style="height: 40px">
+            <a class="navbar-brand" href="javascript:;">
+                <img src="../../assets/img/logo.png" alt="" style="height: 40px">
             </a>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+                    <div class="form-content">
+                        <input class="search-header" type="input" placeholder="Tìm kiếm" aria-label="Search">
+                        <i class="fa-search"></i>
+                    </div>
                 </form>
 
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link menu-icon bell" href="#"></a>
+                        <a class="nav-link menu-icon fa-bell" href="javascript:;"></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link menu-icon book" href="#"></a>
+                        <a class="nav-link menu-icon fa-book" href="javascript:;"></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link menu-icon user" href="#"></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link menu-icon sign-out" href="#">
+                    <li class="nav-item active menu-item-name">
+                        <a class="nav-link menu-icon" href="javascript:;">
+                            <i class="fa-user">Song Văn Cẩm</i>
+                            <div class="submenu">
+                                <a href="javascript:;">Logout</a>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -53,7 +56,7 @@
         <div class="hero p-3">
             <!-- 5 options start  -->
             <div class="card-deck mb-5">
-                <div class="card p-3">
+                <div class="card p-3 text-white bg-dark">
                     <div class="card-body mx-auto p-1">
                         <h5 class="card-text">Học bài mới</h5>
                     </div>
@@ -79,7 +82,7 @@
             <!-- grade card group start -->
             <div class="d-flex justify-content-center mb-2">
                 <div class="card-group">
-                    <div class="card">
+                    <div class="card text-white bg-dark">
                         <div class="card-body mx-auto p-3 text-nowrap">
                             <h5 class="card-text">Lớp 10</h5>
                         </div>
@@ -99,7 +102,7 @@
             <!-- grade card group end -->
 
             <!-- guide start -->
-            <div class="guide-wrapper">
+            <!-- <div class="guide-wrapper">
                 <div class="card-deck mb-2">
                     <div class="card">
                         <div class="card-body mx-auto p-1">
@@ -117,8 +120,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- guide end -->
+
+            <!-- breadcrumb start -->
+            <div class="custom-breadcrumb">
+                <div class="btn-group custom-btn-group" style="display: grid; grid-template-columns: 1fr 1fr 1fr">
+                    <a class="btn active"><span><span>1</span> Chọn môn</span></a>
+                    <a href="javascript:;" class="btn"><span><span>2</span> Chọn chương</span></a>
+                    <a href="javascript:;" class="btn"><span><span>3</span> Chọn bài</span></a>
+                </div>
+            </div>
+            <!-- breadcrumb end -->
 
             <!-- panel start -->
             <div class="panel-wrapper mb-2">
@@ -284,8 +297,8 @@
 
             <!-- direct group start -->
             <div class="direct-group">
-                <button class="btn btn-secondary">Quay lại</button>
-                <button class="btn btn-success">Tiếp tục</button>
+                <button id="btn-back" class="btn btn-secondary">Quay lại</button>
+                <button id="btn-cont" class="btn btn-success">Tiếp tục</button>
             </div>
             <!-- direct group end -->
         </div>
@@ -293,13 +306,13 @@
 
         <div class="footer">
             <div class="footer-items">
-                <a href="#" class="footer-item px-2 py-2">Cộng đồng</a>
-                <a href="#" class="footer-item px-2 py-2">Hỏi & Đáp</a>
-                <a href="#" class="footer-item px-2 py-2">Học phí</a>
-                <a href="#" class="footer-item px-2 py-2">Đăng ký học</a>
-                <a href="#" class="footer-item px-2 py-2">Liên hệ</a>
-                <a href="#" class="footer-item px-2 py-2">Điều khoản</a>
-                <a href="#" class="footer-item px-2 py-2">Giới thiệu</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Cộng đồng</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Hỏi & Đáp</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Học phí</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Đăng ký học</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Liên hệ</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Điều khoản</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Giới thiệu</a>
             </div>
             <div class="copy-right px-2 py-2">
                 <span>@Copyright HSE</span>
@@ -314,6 +327,7 @@
     <script src="../../assets/js/jquery-3.2.1.min.js"></script>
     <script src="../../assets/js/popper.min.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

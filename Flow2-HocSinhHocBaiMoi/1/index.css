@@ -3,6 +3,10 @@ a:hover {
     text-decoration: none;
 }
 
+.card {
+    user-select: none;
+}
+
 .wrapper {
     display: grid;
     /* grid-gap: 1rem; */
@@ -82,7 +86,9 @@ a:hover {
 
 .subject-panel {
     grid-area: subject-panel;
-    background: lawngreen;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
 }
 
 .subject-panel-inner {
@@ -93,7 +99,9 @@ a:hover {
 
 .chapter-panel {
     grid-area: chapter-panel;
-    background: lightpink;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
 }
 
 .chapter-panel-inner {
@@ -103,7 +111,9 @@ a:hover {
 
 .lesson-panel {
     grid-area: lesson-panel;
-    background: lightseagreen
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
 }
 
 .lesson-panel-inner {
@@ -117,7 +127,7 @@ a:hover {
 .direct-group {
     display: flex;
     justify-content: space-between;
-    background: lightpink;
+    /* background: lightpink; */
 }
 
 /* direct-group end */
@@ -125,7 +135,7 @@ a:hover {
 /* footer start */
 
 .footer {
-    background: lightcoral;
+    /* background: lightcoral; */
     display: flex;
     justify-content: space-between;
 }
