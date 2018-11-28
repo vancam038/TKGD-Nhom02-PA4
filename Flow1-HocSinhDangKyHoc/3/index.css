@@ -10,9 +10,6 @@ a:hover {
 
 /* navbar start */
 
-
-
-
 .menu-icon {
     display: block;
     height: 100%;
@@ -80,7 +77,6 @@ a:hover {
 .direct-group {
     display: flex;
     justify-content: space-between;
-    background: lightpink;
 }
 
 /* direct-group end */

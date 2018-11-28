@@ -1,59 +1,71 @@
 * {
-  outline: none!important;
+  outline: none !important;
   font-family: 'OpenSans';
 }
+
 .hidden {
   display: none;
 }
+
 .green-gradient {
-  background: -webkit-gradient(linear, left top, right top, from(#0ac282), to(#0df3a3))!important;
-  background: linear-gradient(to right, #0ac282, #0df3a3)!important;
-}
-.red-gradient {
-  background: -webkit-gradient(linear, left top, right top, from(#fe5d70), to(#fe909d))!important;
-  background: linear-gradient(to right, #fe5d70, #fe909d)!important;
-}
-.blue-gradient {
-  background: -webkit-gradient(linear, left top, right top, from(#01a9ac), to(#01dbdf))!important;
-  background: linear-gradient(to right, #01a9ac, #01dbdf)!important;
-}
-.orange-gradient {
-  background: -webkit-gradient(linear, left top, right top, from(#fe9365), to(#feb798))!important;
-  background: linear-gradient(to right, #fe9365, #feb798)!important;
+  background: -webkit-gradient(linear, left top, right top, from(#0ac282), to(#0df3a3)) !important;
+  background: linear-gradient(to right, #0ac282, #0df3a3) !important;
 }
 
-@font-face{
-  font-family:'FontAwesome';
-  src:url('../../assets/fonts/fontawesome-webfont.ttf');
+.red-gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#fe5d70), to(#fe909d)) !important;
+  background: linear-gradient(to right, #fe5d70, #fe909d) !important;
 }
-@font-face{
-  font-family:'OpenSans';
-  src:url('../../assets/fonts/OpenSans_0.ttf');
+
+.blue-gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#01a9ac), to(#01dbdf)) !important;
+  background: linear-gradient(to right, #01a9ac, #01dbdf) !important;
 }
+
+.orange-gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#fe9365), to(#feb798)) !important;
+  background: linear-gradient(to right, #fe9365, #feb798) !important;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../../assets/fonts/fontawesome-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../../assets/fonts/OpenSans_0.ttf');
+}
+
 .header {
   background: #404E67;
 }
+
 .search-header {
   background: transparent;
   border: 1px solid white;
   border-radius: 20px;
-  width: 250px!important;
+  width: 250px !important;
   color: white;
   padding: 5px 20px;
   font-size: 15px;
 }
+
 .search-header::placeholder {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
-.fa-search:after{
+
+.fa-search:after {
   display: block;
   content: '\f002';
   color: white;
   font: 15px 'FontAwesome';
 }
+
 .form-content {
   position: relative;
 }
+
 .form-content .fa-search {
   position: absolute;
   right: 7%;
@@ -83,24 +95,29 @@
   margin-right: 10px;
 
 }
+
 .fa-user {
   font-style: normal;
 }
+
 .menu-item-name {
   position: relative;
 }
-.menu-item-name >a{
-  width: auto!important;
+
+.menu-item-name>a {
+  width: auto !important;
   line-height: 14px;
 }
+
 .menu-item-name .submenu {
   display: none;
   position: absolute;
   top: 100%;
-  left:0;
+  left: 0;
 
 }
-.menu-item-name >a:after {
+
+.menu-item-name>a:after {
   content: '\f107';
   display: inline;
   color: white;
@@ -111,17 +128,23 @@
 .wrapper {
   background: #f6f7fb;
 }
+
 .main-content {
   padding: 20px;
 }
+
 .hero {
   background: white;
   border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
 }
+
 .custom-card {
   border-radius: 10px;
   margin: 30px 0 20px;
 }
+
 .class-card {
   position: relative;
   color: white;
@@ -129,21 +152,23 @@
   cursor: pointer;
 
 }
+
 .class-card .number {
   display: block;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  border: 3px solid rgba(255,255,255,0.8);
+  border: 3px solid rgba(255, 255, 255, 0.8);
   line-height: 50px;
   font-size: 20px;
   box-sizing: content-box;
   color: white;
 }
+
 .class-card h2 {
   font-size: 35px;
   font-weight: bold;
@@ -151,59 +176,69 @@
   color: white;
 }
 
-.class-card >a {
+.class-card>a {
   display: block;
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%,50%);
-  background: rgba(255,255,255,0.9);
+  transform: translate(-50%, 50%);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   text-align: center;
   padding: 5px 20px;
   font-size: 15px;
 }
-.class-card.blue-card >a{
+
+.class-card.blue-card>a {
   color: #01a9ac;
 }
-.class-card.blue-card .number{
+
+.class-card.blue-card .number {
   background: #01a9ac;
 }
-.class-card.red-card .number{
+
+.class-card.red-card .number {
   background: #fe5d70;
 }
-.class-card.red-card >a{
+
+.class-card.red-card>a {
   color: #fe5d70;
 }
-.class-card.green-card .number{
+
+.class-card.green-card .number {
   background: #0ac282;
 }
-.class-card.green-card >a{
+
+.class-card.green-card>a {
   color: #0ac282;
 }
 
 .custom-breadcrumb {
   margin-bottom: 20px;
 }
+
 .custom-breadcrumb a.active {
   background: rgba(64, 78, 103, 0.7);
 }
+
 .custom-breadcrumb a {
   transform: skewX(-25deg);
   background: #404E67;
   margin: 0 10px;
 }
-.custom-breadcrumb a >span {
+
+.custom-breadcrumb a>span {
   transform: skewX(25deg);
   color: white;
   font-style: normal;
   display: block;
 }
-.custom-breadcrumb a >span >span {
+
+.custom-breadcrumb a>span>span {
   width: 20px;
   height: 20px;
   border-radius: 20px;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.8);
   color: #404E67;
   display: inline-block;
   vertical-align: middle;
@@ -211,22 +246,34 @@
   font-size: 14px;
   margin-right: 5px;
 }
+
 .product-wrapper {
   background: white;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
 }
+
+.guide-container {
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+}
+
 .custom-card {
   border: none;
   padding: 0 20px;
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
+
 .course-card {
   cursor: pointer;
   box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
 }
+
 .course-card .card-body {
   background: white;
-} 
+}
+
 .course-card .card-footer {
   color: white;
   border: none;
@@ -234,28 +281,31 @@
   text-align: center;
 }
 
-.course-card .card-title{
+.course-card .card-title {
   margin: 30px 0;
 }
 
-.course-card.blue-gradient .card-title{
+.course-card.blue-gradient .card-title {
   color: #01a9ac;
   font-size: 30px;
 }
-.course-card.red-gradient .card-title{
+
+.course-card.red-gradient .card-title {
   color: #fe5d70;
   font-size: 30px;
 }
-.course-card.green-gradient .card-title{
+
+.course-card.green-gradient .card-title {
   color: #0ac282;
   font-size: 30px;
 }
-.course-card.orange-gradient .card-title{
+
+.course-card.orange-gradient .card-title {
   color: #fe9365;
   font-size: 30px;
 }
 
-.course-card.active-card .card-title{
+.course-card.active-card .card-title {
   color: white;
 }
 
@@ -264,11 +314,13 @@
   background: white;
   border-top: 2px solid rgba(64, 78, 103, 0.7);
 }
+
 .footer a {
   color: #404E67;
   font-size: 15px;
 
 }
+
 /* .footer a:after {
   content: '\f105';
   display: inline-block;
@@ -277,35 +329,42 @@
   margin-left: 15px;
 } */
 .footer a:last-child:after {
-  display: none; 
-}
-.direct-group a{
-  color: white!important;
+  display: none;
 }
 
-.blue-text{
+.direct-group a {
+  color: white !important;
+}
+
+.blue-text {
   color: #01a9ac;
 }
-.red-text{
+
+.red-text {
   color: #fe5d70;
 }
-.green-text{
+
+.green-text {
   color: #0ac282;
 }
-.orange-text{
+
+.orange-text {
   color: #fe9365;
 }
 
-.blue-bg{
+.blue-bg {
   background: #01a9ac;
 }
-.red-bg{
+
+.red-bg {
   background: #fe5d70;
 }
-.green-bg{
+
+.green-bg {
   background: #0ac282;
 }
-.orange-bg{
+
+.orange-bg {
   background: #fe9365;
 }
 
@@ -321,21 +380,17 @@
   width: 60%;
   color: white;
   padding: 5px 0;
-  text-align: center;
-  margin: 20px auto 0;
   border-radius: 10px;
+ 
+  /* text-align: center;
+  margin: 20px auto 0;
   position: absolute;
   top: 20%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 .card-img-top {
   margin-top: 50px;
   margin-bottom: 20px;
-}
-
-
-.visa-transfer img {
-  width: 100%;
 }

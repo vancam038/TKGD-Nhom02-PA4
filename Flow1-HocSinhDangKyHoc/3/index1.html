@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="../../assets/css/all.css">
+    <link rel="stylesheet" href="../../assets/css/arrowbox.css">
     <title>Register</title>
 </head>
 
@@ -98,62 +99,62 @@
 
                 <!-- tiếp tục code tại đây -->
                 <div class="card-group checkout-method">
-                    <div class="card text-center" id="bank-transfer">
-                        <div class="card-body">
+                    <div class="card text-center py-3" id="bank-transfer">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title blue-text">Chuyển khoản ngân hàng</h5>
-                            <div class="extra blue-bg">+ 10%</div>
+                            <div class="extra mx-auto blue-bg">+ 10%</div>
                         </div>
-                        <div class="card-img-top">
+                        <div class="img-container">
                             <img src="../../assets/img/chain.png" alt="">
                         </div>
                     </div>
-                    <div class="card text-center" id="atm-transfer">
-                        <div class="card-body">
+                    <div class="card text-center py-3" id="atm-transfer">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title red-text">Thẻ ATM</h5>
-                            <div class="extra red-bg">+ 10%</div>
+                            <div class="extra mx-auto red-bg">+ 10%</div>
                         </div>
-                        <div class="card-img-top">
+                        <div class="img-container">
                             <img src="../../assets/img/atm.jpg" alt="">
                         </div>
                     </div>
-                    <div class="card text-center" id="visa-transfer">
-                        <div class="card-body">
+                    <div class="card text-center py-3" id="visa-transfer">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title green-text">Thẻ Visa / Master Card</h5>
-                            <div class="extra green-bg">+ 10%</div>
+                            <div class="extra mx-auto green-bg">+ 10%</div>
                         </div>
-                        <div class="card-img-top">
+                        <div class="img-container">
                             <img src="../../assets/img/visa.jpg" alt="">
                         </div>
                     </div>
-                    <div class="card text-center" id="momo-transfer">
-                        <div class="card-body">
+                    <div class="card text-center py-3" id="momo-transfer">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title orange-text">Momo</h5>
-                            <div class="extra orange-bg">+ 10%</div>
+                            <div class="extra mx-auto orange-bg">+ 10%</div>
                         </div>
-                        <div class="card-img-top">
+                        <div class="img-container">
                             <img src="../../assets/img/momo.jpg" alt="">
                         </div>
                     </div>
-                    <div class="card text-center" id="zalo-transfer">
-                        <div class="card-body">
+                    <div class="card text-center py-3" id="zalo-transfer">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title blue-text">Zalo Pay</h5>
-                            <div class="extra blue-bg">+ 10%</div>
+                            <div class="extra mx-auto blue-bg">+ 10%</div>
                         </div>
-                        <div class="card-img-top">
+                        <div class="img-container">
                             <img src="../../assets/img/zalo.png" alt="">
                         </div>
                     </div>
-                    <div class="card text-center" id="hse-transfer">
-                        <div class="card-body">
+                    <div class="card text-center py-3" id="hse-transfer">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title red-text">Thẻ HSE</h5>
                         </div>
-                        <div class="card-img-top">
-                            <img src="../../assets/img/logo.png" alt="">
+                        <div class="img-container">
+                            <img src="../../assets/img/hse.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="product-container px-3 py-3">
-                    <div class="bank-transfer hidden">
+                    <div class="product-item bank-transfer">
                         <ul class="navbar-nav">
                             <li>Bạn vui lòng thực hiện các bước sau: </li>
                             <li>Bước 1: Nộp tiền chuyển khoản vào tài khoản ngân hàng của HSE </li>
@@ -170,7 +171,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="atm-transfer">
+                    <div class="product-item atm-transfer">
                         <div class="container">
                             <div class="row">
                                 <form class="col-sm-4">
@@ -178,7 +179,48 @@
                                         <label for="first_name" class="col-xs-3 col-form-label mr-auto">Chọn ngân hàng:</label>
                                         <div class="col-xs-9">
                                             <select class="form-control" style="min-width: 206px; max-width: 206px">
-                                                <option selected></option>
+                                                <option value="1">Vietcombank</option>
+                                                <option value="2">Maritime Bank</option>
+                                                <option value="3">TPBank</option>
+                                                <option value="4">BIDV</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập tên chủ
+                                            thẻ:</label>
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control" id="last_name" name="last_name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập số thẻ:</label>
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control" id="last_name" name="last_name">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-around">
+                                        <button class="btn btn-basic">Hủy</button>
+                                        <button class="btn btn-success">Thanh toán</button>
+                                    </div>
+                                </form>
+                                <div class="atm-card-img d-flex justify-content-center col-sm-8">
+                                    <img src="../../assets/img/vietcombank.jpg" alt="Card image cap" height="240px"
+                                        width="320px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item visa-transfer">
+                        <div class="container">
+                            <div class="row">
+                                <form class="col-sm-4">
+                                    <div class="form-group row">
+                                        <label for="first_name" class="col-xs-3 col-form-label mr-auto">Chọn ngân hàng:</label>
+                                        <div class="col-xs-9">
+                                            <select class="form-control" style="min-width: 206px; max-width: 206px">
                                                 <option value="1">BIDV</option>
                                                 <option value="2">Maritime Bank</option>
                                                 <option value="3">TPBank</option>
@@ -206,49 +248,12 @@
                                     </div>
                                 </form>
                                 <div class="atm-card-img d-flex justify-content-center col-sm-8">
-                                    <img src="../../assets/img/bidv.jpg" alt="Card image cap">
+                                    <img src="../../assets/img/bidv.jpg" alt="Card image cap" height="240px" width="320px">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="visa-transfer">
-                        <div class="container">
-                            <div class="row">
-                                <form class="col-sm-4">
-                                    <div class="form-group row">
-                                        <label for="first_name" class="col-xs-3 col-form-label mr-auto">Chọn ngân hàng:</label>
-                                        <div class="col-xs-9">
-                                            <select class="form-control" style="min-width: 206px; max-width: 206px">
-                                                <option value="1">Master</option>
-                                                <option value="2">Visa</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập tên chủ
-                                            thẻ:</label>
-                                        <div class="col-xs-9">
-                                            <input type="text" class="form-control" id="last_name" name="last_name">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập số thẻ:</label>
-                                        <div class="col-xs-9">
-                                            <input type="text" class="form-control" id="last_name" name="last_name">
-                                        </div>
-                                    </div>
 
-                                    <div class="form-group row justify-content-around">
-                                        <button class="btn btn-basic">Hủy</button>
-                                        <button class="btn btn-success">Thanh toán</button>
-                                    </div>
-                                </form>
-                                <div class="atm-card-img d-flex justify-content-center col-sm-4">
-                                    <!-- <img src="../../assets/img/master.jpg" alt="Card image cap"> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="direct-group">
                     <button class="btn btn-secondary">Chọn lại</button>
