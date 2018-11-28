@@ -11,6 +11,7 @@ $(document).ready(function () {
     const mT = true;
     const mF = false;
     toggleSPA(mF, mT, mT, mT, mT, mT);
+    $("#bank-transfer").addClass("arrow_box");
 
     // $("#btn-back").click(() => {
     //     window.location.replace("../1/index.html");
@@ -25,31 +26,31 @@ $(document).ready(function () {
     $("#atm-transfer").click(() => {
         $(".checkout-method").children().removeClass("arrow_box");
         $("#atm-transfer").addClass("arrow_box");
-        toggleSPA(mF, mT, mT, mT, mT, mT);
+        toggleSPA(mT, mF, mT, mT, mT, mT);
     });
 
     $("#visa-transfer").click(() => {
         $(".checkout-method").children().removeClass("arrow_box");
         $("#visa-transfer").addClass("arrow_box");
-        toggleSPA(mF, mT, mT, mT, mT, mT);
+        toggleSPA(mT, mT, mF, mT, mT, mT);
     });
 
     $("#momo-transfer").click(() => {
         $(".checkout-method").children().removeClass("arrow_box");
         $("#momo-transfer").addClass("arrow_box");
-        toggleSPA(mF, mT, mT, mT, mT, mT);
+        toggleSPA(mT, mT, mT, mF, mT, mT);
     });
 
     $("#zalo-transfer").click(() => {
         $(".checkout-method").children().removeClass("arrow_box");
         $("#zalo-transfer").addClass("arrow_box");
-        toggleSPA(mF, mT, mT, mT, mT, mT);
+        toggleSPA(mT, mT, mT, mT, mF, mT);
     });
 
     $("#hse-transfer").click(() => {
         $(".checkout-method").children().removeClass("arrow_box");
         $("#hse-transfer").addClass("arrow_box");
-        toggleSPA(mF, mT, mT, mT, mT, mT);
+        toggleSPA(mT, mT, mT, mT, mT, mF);
     });
 
 });
