@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/alertify.min.css" />
+    <link rel="stylesheet" href="../../assets/css/default.min.css" />
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="../../assets/css/all.css">
     <link rel="stylesheet" href="../../assets/css/arrowbox.css">
@@ -208,7 +210,7 @@
 
                                     <div class="form-group row justify-content-around">
                                         <button class="btn btn-basic">Hủy</button>
-                                        <button class="btn btn-success">Thanh toán</button>
+                                        <button class="btn btn-success btn-pay">Thanh toán</button>
                                     </div>
                                 </form>
                                 <div class="atm-card-img d-flex justify-content-center col-sm-8">
@@ -238,19 +240,21 @@
                                         <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập tên chủ
                                             thẻ:</label>
                                         <div class="col-xs-9">
-                                            <input type="text" class="form-control" id="last_name" name="last_name" required>
+                                            <input type="text" class="form-control" id="last_name" name="last_name"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập số thẻ:</label>
                                         <div class="col-xs-9">
-                                            <input type="text" class="form-control" id="last_name" name="last_name" required>
+                                            <input type="text" class="form-control" id="last_name" name="last_name"
+                                                required>
                                         </div>
                                     </div>
 
                                     <div class="form-group row justify-content-around">
                                         <button class="btn btn-basic">Hủy</button>
-                                        <button class="btn btn-success">Thanh toán</button>
+                                        <button class="btn btn-success btn-pay">Thanh toán</button>
                                     </div>
                                 </form>
                                 <div class="atm-card-img d-flex justify-content-center col-sm-8">
@@ -316,10 +320,34 @@
                     </div>
                     <!-- zalo end -->
 
+                    <div class="product-item hse-transfer">
+                        <div class="container">
+                            <div class="row">
+                                <form class="col-sm-4">
+                                    <div class="form-group row">
+                                        <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập mã thẻ:</label>
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control" id="last_name" name="last_name"
+                                                required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row justify-content-around">
+                                        <button class="btn btn-basic">Hủy</button>
+                                        <button class="btn btn-success btn-pay">Thanh toán</button>
+                                    </div>
+                                </form>
+                                <div class="atm-card-img d-flex justify-content-center col-sm-8">
+                                    <img src="../../assets/img/logo.png" alt="Card image cap" height="240px" width="320px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="direct-group">
-                    <button class="btn btn-secondary">Chọn lại</button>
-                    <button class="btn btn-success">Tiếp tục</button>
+                    <button id="btn-back1" class="btn btn-secondary">Quay lại chọn sản phẩm</button>
+                    <!-- <button class="btn btn-success">Tiếp tục</button> -->
                 </div>
             </div>
             <!-- product wrapper end -->
@@ -343,6 +371,7 @@
     <script src="../../assets/js/jquery-3.2.1.min.js"></script>
     <script src="../../assets/js/popper.min.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/alertify.min.js"></script>
     <script src="./index.js"></script>
 </body>
 

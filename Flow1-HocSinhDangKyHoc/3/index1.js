@@ -13,9 +13,9 @@ $(document).ready(function () {
     toggleSPA(mF, mT, mT, mT, mT, mT);
     $("#bank-transfer").addClass("arrow_box");
 
-    $("#btn-back1").click(() => {
-        window.location.replace("../1/index.html");
-    });
+    // $("#btn-back").click(() => {
+    //     window.location.replace("../1/index.html");
+    // });
 
     $("#bank-transfer").click(() => {
         $(".checkout-method").children().removeClass("arrow_box");
@@ -62,15 +62,15 @@ $(document).ready(function () {
         window.location.replace("./zalo-popup.html");
     })
 
-    $(".btn-pay").click(() => {
-        showSuccessAlert();
-    })
-
     $("#btn-back").click(() => {
         window.location.replace("./index1.html");
     });
 
-    // showSuccessAlert()
+    $('btn').click((e)=> {
+        e.preventDefault();
+    })
+
+    showSuccessAlert();
 });
 
 function showSuccessAlert() {
