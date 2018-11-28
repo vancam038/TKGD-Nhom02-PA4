@@ -1,7 +1,7 @@
 .test-section-wrapper-inner {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 10rem;
+    grid-gap: 1.5rem;
 }
 
 .list-q-number {

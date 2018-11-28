@@ -5,6 +5,7 @@ a:hover {
 
 .card {
     user-select: none;
+    cursor: pointer;
 }
 
 .wrapper {
@@ -47,7 +48,7 @@ a:hover {
 
 /* hero start */
 .hero {
-    background: #EFFBFF;
+    background: #FAFAFA;
 }
 
 .option-wrapper {
@@ -119,6 +120,16 @@ a:hover {
 .lesson-panel-inner {
     display: grid;
     grid-gap: .75rem;
+}
+
+.subject-img-container {
+    width: 100%;
+    height: 80px;
+    displaY: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
 /* panel end */

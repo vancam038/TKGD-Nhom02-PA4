@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/all.css">
     <link rel="stylesheet" href="spa.css">
-    <link rel="stylesheet" href="../../assets/css/arrowbox.css">
+    <link rel="stylesheet" href="../../assets/css/arrowbox1.css">
     <link rel="stylesheet" href="index.css">
     <title>Register</title>
 </head>
@@ -56,378 +56,603 @@
 
         <!-- hero start -->
         <div class="hero p-3">
-            <!-- video start-->
-            <video width="100%" controls>
-                <source src="../../assets/clip/clipdemo.mp4" type="video/mp4">
-            </video>
-            <!-- video end -->
+            <div class="hero-inner">
+                <div class="timeline">
+                    <div class="time-line-inner" style="overflow:auto">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="#">Lớp 10</a></li>
+                                <li class="breadcrumb-item"><a href="#">Vật Lý</a></li>
+                                <li class="breadcrumb-item active"><a href="#">Chương 1</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Bài 1</li>
+                            </ol>
+                        </nav>
 
-            <!-- 5 options start -->
-            <div class="card-group mb-5">
-                <div id="brief-card" class="card choice-card text-center">
-                    <div class="choice-img">
-                        <img src="../../assets/img/book.png" alt="Card image cap">
-                    </div>
-                    <div id="brief-card-body" class="card-body choice-body arrow_box">
-                        <h5 class="card-title mb-0">Tóm tắt bài giảng</h5>
+                        <div class="list-lessons p-2">
+                            <div class="list-lesson-inner">
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Chương 1
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show py-2" aria-labelledby="headingOne"
+                                            data-parent="#accordion">
+                                            <div class="lesson white-box p-2 d-flex align-items-center text-white bg-dark font-weight-bold">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 1: Chuyển động cơ</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 2: Chuyển động thẳng đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 3: Chuyển động thẳng biến đổi đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 4: Sự rơi tự do</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 5: Chuyển động tròn đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 6: Tính tương đối của chuyển động và công thức
+                                                    cộng vận tốc</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 7: Sai số của phép đo các đại lượng vật lí</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 8: Thực hành Khảo sát chuyển động rơi tự
+                                                    do và xác định gia tốc rơi tự do</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Chương 2
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="lesson white-box p-2 d-flex align-items-center text-white bg-dark font-weight-bold">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 1: Chuyển động cơ</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 2: Chuyển động thẳng đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 3: Chuyển động thẳng biến đổi đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 4: Sự rơi tự do</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 5: Chuyển động tròn đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 6: Tính tương đối của chuyển động và công thức
+                                                    cộng vận tốc</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 7: Sai số của phép đo các đại lượng vật lí</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 8: Thực hành Khảo sát chuyển động rơi tự
+                                                    do và xác định gia tốc rơi tự do</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Chương 3
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordion">
+                                            <div class="lesson white-box p-2 d-flex align-items-center text-white bg-dark font-weight-bold">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 1: Chuyển động cơ</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 2: Chuyển động thẳng đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 3: Chuyển động thẳng biến đổi đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 4: Sự rơi tự do</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 5: Chuyển động tròn đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 6: Tính tương đối của chuyển động và công thức
+                                                    cộng vận tốc</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 7: Sai số của phép đo các đại lượng vật lí</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 8: Thực hành Khảo sát chuyển động rơi tự
+                                                    do và xác định gia tốc rơi tự do</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    Chương 4
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                            data-parent="#accordion">
+                                            <div class="lesson white-box p-2 d-flex align-items-center text-white bg-dark font-weight-bold">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 1: Chuyển động cơ</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 2: Chuyển động thẳng đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 3: Chuyển động thẳng biến đổi đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 4: Sự rơi tự do</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 5: Chuyển động tròn đều</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 6: Tính tương đối của chuyển động và công thức
+                                                    cộng vận tốc</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 7: Sai số của phép đo các đại lượng vật lí</span>
+                                            </div>
+                                            <div class="lesson white-box p-2 d-flex align-items-center">
+                                                <img src="../../assets/img/book.png" alt="">
+                                                <span class="ml-2">Bài 8: Thực hành Khảo sát chuyển động rơi tự
+                                                    do và xác định gia tốc rơi tự do</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="study-content px-5 py-4">
+                    <!-- video start-->
+                    <div>
+                        <video width="100%" controls>
+                            <source src="../../assets/clip/clipdemo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <!-- video end -->
 
-                <div id="test-card" class="card choice-card text-center">
-                    <div class="choice-img">
-                        <img src="../../assets/img/exam.png" alt="Card image cap">
-                    </div>
-                    <div id="test-card-body" class="card-body choice-body">
-                        <h5 class="card-title mb-0">Kiểm tra đánh giá</h5>
-                    </div>
-                </div>
+                    <!-- 5 options start -->
+                    <div class="card-group mb-5">
+                        <div id="brief-card" class="card choice-card text-center">
+                            <div class="choice-img">
+                                <img src="../../assets/img/reading.png" alt="Card image cap">
+                            </div>
+                            <div id="brief-card-body" class="card-body choice-body arrow_box">
+                                <h5 class="card-title mb-0">Tóm tắt bài giảng</h5>
+                            </div>
+                        </div>
 
-                <div id="pwp-card" class="card choice-card text-center">
-                    <div class="choice-img">
-                        <img src="../../assets/img/powerpoint.png" alt="Card image cap">
-                    </div>
-                    <div id="pwp-card-body" class="card-body choice-body">
-                        <h5 class="card-title mb-0">Bài giảng powerpoint</h5>
-                    </div>
-                </div>
+                        <div id="test-card" class="card choice-card text-center">
+                            <div class="choice-img">
+                                <img src="../../assets/img/exam.png" alt="Card image cap">
+                            </div>
+                            <div id="test-card-body" class="card-body choice-body">
+                                <h5 class="card-title mb-0">Kiểm tra đánh giá</h5>
+                            </div>
+                        </div>
 
-                <div id="extra-card" class="card choice-card text-center">
-                    <div class="choice-img">
-                        <img src="../../assets/img/extra.png" alt="Card image cap">
-                    </div>
-                    <div id="extra-card-body" class="card-body choice-body">
-                        <h5 class="card-title mb-0">Tài liệu đọc thêm</h5>
-                    </div>
-                </div>
+                        <div id="pwp-card" class="card choice-card text-center">
+                            <div class="choice-img">
+                                <img src="../../assets/img/powerpoint.png" alt="Card image cap">
+                            </div>
+                            <div id="pwp-card-body" class="card-body choice-body">
+                                <h5 class="card-title mb-0">Bài giảng powerpoint</h5>
+                            </div>
+                        </div>
 
-                <div id="support-card" class="card choice-card text-center">
-                    <div class="choice-img">
-                        <img src="../../assets/img/support.png" alt="Card image cap">
+                        <div id="extra-card" class="card choice-card text-center">
+                            <div class="choice-img">
+                                <img src="../../assets/img/extra.png" alt="Card image cap">
+                            </div>
+                            <div id="extra-card-body" class="card-body choice-body">
+                                <h5 class="card-title mb-0">Tài liệu đọc thêm</h5>
+                            </div>
+                        </div>
+
+                        <div id="support-card" class="card choice-card text-center">
+                            <div class="choice-img">
+                                <img src="../../assets/img/support.png" alt="Card image cap">
+                            </div>
+                            <div id="support-card-body" class="card-body choice-body">
+                                <h5 class="card-title mb-0">Ý kiến/Hỗ trợ</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div id="support-card-body" class="card-body choice-body">
-                        <h5 class="card-title mb-0">Ý kiến/Hỗ trợ</h5>
+                    <!-- 5 options end -->
+
+                    <!-- singe page start -->
+                    <div class="single-page-wrapper">
+                        <div class="single-page-wrapper-inner p-4">
+                            <!-- tóm tắt bài giảng start -->
+                            <div class="brief-wrapper">
+                                <div class="brief-wrapper-inner">
+                                    <h3>Mục tiêu bài giảng</h3>
+                                    <p>Sau khi học xong bài này, học sinh cần đạt được:</p>
+                                    <p>1. Về kiến thức:</p>
+                                    <ul>
+                                        <li>Hiểu khái niệm chuyển động cơ</li>
+                                        <li>Các công thức tính chuyển động</li>
+                                        <li>Hiểu khải niệm chất điểm</li>
+                                    </ul>
+
+                                    <p>2. Về kỹ năng:</p>
+                                    <ul>
+                                        <li>Hiểu được chuyển động cơ vận dụng trong đời sống ra sao</li>
+                                        <li>Vận dụng các công thức động học để giải các bài toán xã hội</li>
+                                        <li>Hiểu khải niệm chất điểm</li>
+                                    </ul>
+
+                                    <p>3. Về thái độ:</p>
+                                    <ul>
+                                        <li>Nhận thức được vai trò của chuyển động cơ trong nghiên cứu</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- tóm tắt bài giảng end -->
+
+                            <!-- kiểm tra đánh giá start -->
+                            <div class="test-wrapper">
+                                <div class="test-wrapper-inner">
+
+                                    <div class="card-group mb-3">
+                                        <div class="card text-white bg-danger">
+                                            <div class="card-body mx-auto p-1">
+                                                <h5 class="card-title mb-0">Trắc nghiệm</h5>
+                                            </div>
+                                        </div>
+                                        <div class="card text-dark bg-light">
+                                            <div class="card-body mx-auto p-1">
+                                                <h5 class="card-title mb-0">Tự luận</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="test-section-wrapper p-3">
+                                        <div class="test-section-wrapper-inner">
+                                            <div class="question-section d-flex flex-column">
+                                                <div class="list-q-number mb-4">
+                                                    <div class="item text-white bg-primary">1</div>
+                                                    <div class="item">2</div>
+                                                    <div class="item">3</div>
+                                                    <div class="item">4</div>
+                                                    <div class="item">5</div>
+                                                    <div class="item">6</div>
+                                                    <div class="item">7</div>
+                                                    <div class="item">8</div>
+                                                    <div class="item">9</div>
+                                                    <div class="item">10</div>
+                                                </div>
+                                                <button class="btn btn-success">Nộp bài</button>
+                                            </div>
+                                            <div class="answer-section">
+                                                <div class="card-group flex-column">
+                                                    <div class="card text-dark bg-light mb-2">
+                                                        <div class="card-body p-3">
+                                                            <h5>1. Trường hợp nào dưới đây có thể coi vật là chất điểm?</h5>
+                                                            <ul style="list-style: none">
+                                                                <li>
+                                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadioInline1"
+                                                                            name="customRadioInline1" class="custom-control-input"
+                                                                            value="true">
+                                                                        <label class="custom-control-label" for="customRadioInline1">Trái
+                                                                            đất
+                                                                            chuyển động tự xoay quanh mình</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadioInline2"
+                                                                            name="customRadioInline1" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadioInline2">Hai
+                                                                            hòn bi
+                                                                            lúc va chạm nhau</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadioInline3"
+                                                                            name="customRadioInline1" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadioInline3">Người
+                                                                            nhảy
+                                                                            cầu lúc đang rơi xuông nước</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadioInline4"
+                                                                            name="customRadioInline1" class="custom-control-input"
+                                                                            checked>
+                                                                        <label class="custom-control-label" for="customRadioInline4">Giọt
+                                                                            nước
+                                                                            mưa lúc đang rơi</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card text-dark bg-light mb-2">
+                                                        <div class="card-body p-3">
+                                                            <h5>2. Trường hợp nào dưới đây có thể coi vật là chất điểm?</h5>
+                                                            <ul style="list-style: none">
+                                                                <li>
+                                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadioInline5"
+                                                                            name="customRadioInline1" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadioInline5">Trái
+                                                                            đất
+                                                                            chuyển động tự xoay quanh mình</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadioInline6"
+                                                                            name="customRadioInline1" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadioInline6">Hai
+                                                                            hòn bi
+                                                                            lúc va chạm nhau</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadioInline7"
+                                                                            name="customRadioInline1" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadioInline7">Người
+                                                                            nhảy
+                                                                            cầu lúc đang rơi xuông nước</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadioInline8"
+                                                                            name="customRadioInline1" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadioInline8">Giọt
+                                                                            nước
+                                                                            mưa lúc đang rơi</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- kiểm tra đánh giá end -->
+
+                            <!-- slideshow powerpoint start -->
+                            <div class="pwp-wrapper">
+                                <div class="pwp-wrapper-inner w-100">
+                                    <h5>Bài 1: Chuyển động cơ</h5>
+                                    <div class="slide-container" style="height: 100%">
+                                        <iframe src="https://onedrive.live.com/embed?cid=D08BAD696F1AD6D5&resid=D08BAD696F1AD6D5%21104&authkey=AAqlgUpFHz0C2TI&em=2"
+                                            width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slideshow powerpoint end -->
+
+                            <!-- tài liệu đọc thêm start -->
+                            <div class="extra-wrapper">
+                                <div class="extra-wrapper-inner">
+                                    <div class="card-group mb-3">
+                                        <div class="card text-dark bg-light">
+                                            <div class="card-body mx-auto p-1">
+                                                <h5 class="card-title mb-0">Tài liệu tham khảo thêm</h5>
+                                            </div>
+                                        </div>
+                                        <div class="card text-white bg-danger">
+                                            <div class="card-body mx-auto p-1">
+                                                <h5 class="card-title mb-0">Thuật ngữ Việt - Anh</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    .
+                                    <table class="table table-bordered table-striped">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Thuật ngữ tiếng Anh</th>
+                                                <th scope="col">Ý nghĩa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Frequence</td>
+                                                <td>Tần số</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Velocity</td>
+                                                <td>Vận tốc</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Speed</td>
+                                                <td>Tốc độ</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- tài liệu đọc thêm end -->
+
+                            <!-- ý kiến hỗ trợ start -->
+                            <div class="support-wrapper">
+                                <div class="support-wrapper-inner">
+                                    <div class="card-group">
+                                        <div class="card text-dark bg-light">
+                                            <div class="card-body mx-auto p-1">
+                                                <h5 class="card-title mb-0">Câu hỏi thường gặp</h5>
+                                            </div>
+                                        </div>
+                                        <div class="card text-white bg-danger">
+                                            <div class="card-body mx-auto p-1">
+                                                <h5 class="card-title mb-0">Gửi ý kiến</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="msg-section p-5">
+                                        <div class="list-msg">
+                                            <div class="card text-dark bg-light mb-3">
+                                                <div class="card-body p-1 d-flex">
+                                                    <img src="../../assets/img/customer.png" alt="" width="64px" height="64px">
+                                                    <div class="text-section ml-3 w-100">
+                                                        <div class="name-and-date d-flex justify-content-between">
+                                                            <h5 class="card-title">Võ Thị Thúy An</h5>
+                                                            <p class="card-text"><small class="text-muted">28/09/2018
+                                                                    15:05PM
+                                                                    Trả lời</small></p>
+                                                        </div>
+                                                        <p class="card-text ml-3">Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card text-dark bg-light mb-3">
+                                                <div class="card-body p-1 d-flex">
+                                                    <img src="../../assets/img/man.png" alt="" width="64px" height="64px">
+                                                    <div class="text-section ml-3 w-100">
+                                                        <div class="name-and-date d-flex justify-content-between">
+                                                            <h5 class="card-title">Song Văn Cẩm</h5>
+                                                            <p class="card-text"><small class="text-muted">28/09/2018
+                                                                    15:05PM
+                                                                    Trả lời</small></p>
+                                                        </div>
+                                                        <p class="card-text ml-3">Lorem ipsum dolor sit amet
+                                                            consectetur
+                                                            adipisicing elit.
+                                                            Veritatis, minima?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card text-dark bg-light mb-3">
+                                                <div class="card-body p-1 d-flex">
+                                                    <img src="../../assets/img/customer.png" alt="" width="64px" height="64px">
+                                                    <div class="text-section ml-3 w-100">
+                                                        <div class="name-and-date d-flex justify-content-between">
+                                                            <h5 class="card-title">Trần Tuấn Đạt</h5>
+                                                            <p class="card-text"><small class="text-muted">28/09/2018
+                                                                    15:05PM
+                                                                    Trả lời</small></p>
+                                                        </div>
+                                                        <p class="card-text ml-3">Lorem ipsum dolor sit amet,
+                                                            consectetur
+                                                            adipisicing elit.
+                                                            Magnam
+                                                            ullam voluptatibus inventore dolorem minus possimus,
+                                                            adipisci iusto
+                                                            numquam
+                                                            suscipit
+                                                            quas.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card text-dark bg-light mt-5">
+                                            <div class="card-body p-1 d-flex">
+                                                <img src="../../assets/img/man.png" alt="" width="64px" height="64px">
+                                                <div class="text-section ml-3 w-100">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="5" placeholder="Gửi ý kiến của bạn tại đây"></textarea>
+                                                        <div class="d-flex justify-content-end">
+                                                            <button class="btn btn-success mt-2">Gửi</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ý kiến hỗ trợ end -->
+                        </div>
                     </div>
+                    <!-- single page end -->
                 </div>
             </div>
-            <!-- 5 options end -->
-
-            <!-- singe page start -->
-
-            <div class="single-page-wrapper">
-                <div class="single-page-wrapper-inner p-2">
-                    <!-- tóm tắt bài giảng start -->
-                    <div class="brief-wrapper">
-                        <div class="brief-wrapper-inner">
-                            <h3>Mục tiêu bài giảng</h3>
-                            <p>Sau khi học xong bài này, học sinh cần đạt được:</p>
-                            <p>1. Về kiến thức:</p>
-                            <ul>
-                                <li>Hiểu khái niệm chuyển động cơ</li>
-                                <li>Các công thức tính chuyển động</li>
-                                <li>Hiểu khải niệm chất điểm</li>
-                            </ul>
-
-                            <p>2. Về kỹ năng:</p>
-                            <ul>
-                                <li>Hiểu được chuyển động cơ vận dụng trong đời sống ra sao</li>
-                                <li>Vận dụng các công thức động học để giải các bài toán xã hội</li>
-                                <li>Hiểu khải niệm chất điểm</li>
-                            </ul>
-
-                            <p>3. Về thái độ:</p>
-                            <ul>
-                                <li>Nhận thức được vai trò của chuyển động cơ trong nghiên cứu</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- tóm tắt bài giảng end -->
-
-                    <!-- kiểm tra đánh giá start -->
-                    <div class="test-wrapper">
-                        <div class="test-wrapper-inner">
-
-                            <div class="card-group mb-3">
-                                <div class="card text-white bg-danger">
-                                    <div class="card-body mx-auto p-1">
-                                        <h5 class="card-title mb-0">Trắc nghiệm</h5>
-                                    </div>
-                                </div>
-                                <div class="card text-dark bg-light">
-                                    <div class="card-body mx-auto p-1">
-                                        <h5 class="card-title mb-0">Tự luận</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="test-section-wrapper p-3">
-                                <div class="test-section-wrapper-inner">
-                                    <div class="question-section d-flex flex-column">
-                                        <div class="list-q-number mb-4">
-                                            <div class="item text-white bg-primary">1</div>
-                                            <div class="item">2</div>
-                                            <div class="item">3</div>
-                                            <div class="item">4</div>
-                                            <div class="item">5</div>
-                                            <div class="item">6</div>
-                                            <div class="item">7</div>
-                                            <div class="item">8</div>
-                                            <div class="item">9</div>
-                                            <div class="item">10</div>
-                                        </div>
-                                        <button class="btn btn-success">Nộp bài</button>
-                                    </div>
-                                    <div class="answer-section">
-                                        <div class="card-group flex-column">
-                                            <div class="card text-dark bg-light mb-2">
-                                                <div class="card-body p-3">
-                                                    <h5>1. Trường hợp nào dưới đây có thể coi vật là chất điểm?</h5>
-                                                    <ul style="list-style: none">
-                                                        <li>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                                                    class="custom-control-input" value="true">
-                                                                <label class="custom-control-label" for="customRadioInline1">Trái
-                                                                    đất
-                                                                    chuyển động tự xoay quanh mình</label>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                                                                    class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline2">Hai
-                                                                    hòn bi
-                                                                    lúc va chạm nhau</label>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline3" name="customRadioInline1"
-                                                                    class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline3">Người
-                                                                    nhảy
-                                                                    cầu lúc đang rơi xuông nước</label>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline4" name="customRadioInline1"
-                                                                    class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline4">Giọt
-                                                                    nước
-                                                                    mưa lúc đang rơi</label>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="card text-dark bg-light mb-2">
-                                                <div class="card-body p-3">
-                                                    <h5>2. Trường hợp nào dưới đây có thể coi vật là chất điểm?</h5>
-                                                    <ul style="list-style: none">
-                                                        <li>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline5" name="customRadioInline1"
-                                                                    class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline5">Trái
-                                                                    đất
-                                                                    chuyển động tự xoay quanh mình</label>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline6" name="customRadioInline1"
-                                                                    class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline6">Hai
-                                                                    hòn bi
-                                                                    lúc va chạm nhau</label>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline7" name="customRadioInline1"
-                                                                    class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline7">Người
-                                                                    nhảy
-                                                                    cầu lúc đang rơi xuông nước</label>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline8" name="customRadioInline1"
-                                                                    class="custom-control-input">
-                                                                <label class="custom-control-label" for="customRadioInline8">Giọt
-                                                                    nước
-                                                                    mưa lúc đang rơi</label>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- kiểm tra đánh giá end -->
-
-                    <!-- slideshow powerpoint start -->
-                    <div class="pwp-wrapper">
-                        <div class="pwp-wrapper-inner w-100">
-                            <h5>Bài 1: Chuyển động cơ</h5>
-                            <div class="slide-container" style="height: 100%">
-                                <iframe src="https://onedrive.live.com/embed?cid=D08BAD696F1AD6D5&resid=D08BAD696F1AD6D5%21104&authkey=AAqlgUpFHz0C2TI&em=2"
-                                    width="100%" height="80%" frameborder="0" scrolling="no"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- slideshow powerpoint end -->
-
-                    <!-- tài liệu đọc thêm start -->
-                    <div class="extra-wrapper">
-                        <div class="extra-wrapper-inner">
-                            <div class="card-group mb-3">
-                                <div class="card text-dark bg-light">
-                                    <div class="card-body mx-auto p-1">
-                                        <h5 class="card-title mb-0">Tài liệu tham khảo thêm</h5>
-                                    </div>
-                                </div>
-                                <div class="card text-white bg-danger">
-                                    <div class="card-body mx-auto p-1">
-                                        <h5 class="card-title mb-0">Thuật ngữ Việt - Anh</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            .
-                            <table class="table table-bordered table-striped">
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">Thuật ngữ tiếng Anh</th>
-                                        <th scope="col">Ý nghĩa</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Frequence</td>
-                                        <td>Tần số</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Velocity</td>
-                                        <td>Vận tốc</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Speed</td>
-                                        <td>Tốc độ</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <!-- tài liệu đọc thêm end -->
-
-                    <!-- ý kiến hỗ trợ start -->
-                    <div class="support-wrapper">
-                        <div class="support-wrapper-inner">
-                            <div class="card-group">
-                                <div class="card text-dark bg-light">
-                                    <div class="card-body mx-auto p-1">
-                                        <h5 class="card-title mb-0">Câu hỏi thường gặp</h5>
-                                    </div>
-                                </div>
-                                <div class="card text-white bg-danger">
-                                    <div class="card-body mx-auto p-1">
-                                        <h5 class="card-title mb-0">Gửi ý kiến</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="msg-section p-5">
-                                <div class="list-msg">
-                                    <div class="card text-dark bg-light mb-3">
-                                        <div class="card-body p-1 d-flex">
-                                            <img src="../../assets/img/customer.png" alt="" width="64px" height="64px">
-                                            <div class="text-section ml-3 w-100">
-                                                <div class="name-and-date d-flex justify-content-between">
-                                                    <h5 class="card-title">Võ Thị Thúy An</h5>
-                                                    <p class="card-text"><small class="text-muted">28/09/2018 15:05PM
-                                                            Trả lời</small></p>
-                                                </div>
-                                                <p class="card-text ml-3">Lorem ipsum dolor sit amet.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card text-dark bg-light mb-3">
-                                        <div class="card-body p-1 d-flex">
-                                            <img src="../../assets/img/man.png" alt="" width="64px" height="64px">
-                                            <div class="text-section ml-3 w-100">
-                                                <div class="name-and-date d-flex justify-content-between">
-                                                    <h5 class="card-title">Song Văn Cẩm</h5>
-                                                    <p class="card-text"><small class="text-muted">28/09/2018 15:05PM
-                                                            Trả lời</small></p>
-                                                </div>
-                                                <p class="card-text ml-3">Lorem ipsum dolor sit amet consectetur
-                                                    adipisicing elit.
-                                                    Veritatis, minima?</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card text-dark bg-light mb-3">
-                                        <div class="card-body p-1 d-flex">
-                                            <img src="../../assets/img/customer.png" alt="" width="64px" height="64px">
-                                            <div class="text-section ml-3 w-100">
-                                                <div class="name-and-date d-flex justify-content-between">
-                                                    <h5 class="card-title">Trần Tuấn Đạt</h5>
-                                                    <p class="card-text"><small class="text-muted">28/09/2018 15:05PM
-                                                            Trả lời</small></p>
-                                                </div>
-                                                <p class="card-text ml-3">Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Magnam
-                                                    ullam voluptatibus inventore dolorem minus possimus, adipisci iusto
-                                                    numquam
-                                                    suscipit
-                                                    quas.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card text-dark bg-light mt-5">
-                                    <div class="card-body p-1 d-flex">
-                                        <img src="../../assets/img/man.png" alt="" width="64px" height="64px">
-                                        <div class="text-section ml-3 w-100">
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                                                    placeholder="Gửi ý kiến của bạn tại đây"></textarea>
-                                                <div class="d-flex justify-content-end">
-                                                    <button class="btn btn-success mt-2">Gửi</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ý kiến hỗ trợ end -->
-                </div>
-            </div>
-            <!-- single page end -->
-
             <!-- direct group start -->
-            <!-- <div class="direct-group">
+            <div class="direct-group mt-2">
                 <button id="btn-back" class="btn btn-secondary">Quay lại</button>
-            </div> -->
+            </div>
             <!-- direct group end -->
         </div>
+
+
+
         <!-- hero end -->
 
         <div class="footer">

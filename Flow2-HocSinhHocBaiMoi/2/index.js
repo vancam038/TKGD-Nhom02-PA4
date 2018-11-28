@@ -44,4 +44,8 @@ $(document).ready(function () {
         $("#support-card-body").addClass("arrow_box");
         toggleSPA(mT, mT, mT, mT, mF);
     })
+
+    $("#btn-back").click(() => {
+        window.location.replace("../1/index.html");
+    });
 });
