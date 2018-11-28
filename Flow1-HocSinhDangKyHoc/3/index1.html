@@ -157,19 +157,23 @@
                     <div class="product-item bank-transfer">
                         <ul class="navbar-nav">
                             <li>Bạn vui lòng thực hiện các bước sau: </li>
-                            <li>Bước 1: Nộp tiền chuyển khoản vào tài khoản ngân hàng của HSE </li>
-                            <li>1. Tên người thụ hưởng</li>
-                            <li>2. Số tiền</li>
+                            <li><b>Bước 1: Nộp tiền chuyển khoản vào tài khoản ngân hàng của HSE </b></li>
+                            <li>1. Tên người thụ hưởng: HSE</li>
+                            <li>2. Số tiền: <b style="color:red">1.260.000đ</b></li>
                             <li>3. Nội dung chuyển tiền (mã giao dịch): 19572</li>
                             <li>4. Số tài khoản của HSE như sau:
                                 <ul>
                                     <li>STK: 0451001337688 tại Vietcombank - chi nhánh Lữ Gia, TPHCM</li>
-                                    <li>STK: 1251000590546 tại BIDV- chi nhánh Lữ Gia, TPHCM</li>
+                                    <li>STK: 1251000590546 tại BIDV - chi nhánh Lữ Gia, TPHCM</li>
                                     <li>STK: 566688588 tại TPBank - chi nhánh Lữ Gia, TPHCM</li>
                                     <li>STK: 11700145510 tại Vietin Bank - chi nhánh Lữ Gia, TPHCM</li>
                                 </ul>
                             </li>
+                            <li><b>Bước 2: Xác nhận thông tin chuyển tiền thành công tại email + số điện thoại của bạn</b></li>
+                            <li>Nếu có thắc mắc hoặc cần sự trợ giúp, vui lòng gửi email về địa chỉ <i>thpt@hse.edu.vn</i>
+                                hoặc gọi về tổng đài: <i>(012) 345 6789</i></li>
                         </ul>
+
                     </div>
                     <div class="product-item atm-transfer">
                         <div class="container">
@@ -190,13 +194,15 @@
                                         <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập tên chủ
                                             thẻ:</label>
                                         <div class="col-xs-9">
-                                            <input type="text" class="form-control" id="last_name" name="last_name">
+                                            <input type="text" class="form-control" id="last_name" name="last_name"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập số thẻ:</label>
                                         <div class="col-xs-9">
-                                            <input type="text" class="form-control" id="last_name" name="last_name">
+                                            <input type="text" class="form-control" id="last_name" name="last_name"
+                                                required>
                                         </div>
                                     </div>
 
@@ -232,13 +238,13 @@
                                         <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập tên chủ
                                             thẻ:</label>
                                         <div class="col-xs-9">
-                                            <input type="text" class="form-control" id="last_name" name="last_name">
+                                            <input type="text" class="form-control" id="last_name" name="last_name" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="last_name" class="col-xs-3 col-form-label mr-auto">Nhập số thẻ:</label>
                                         <div class="col-xs-9">
-                                            <input type="text" class="form-control" id="last_name" name="last_name">
+                                            <input type="text" class="form-control" id="last_name" name="last_name" required>
                                         </div>
                                     </div>
 
@@ -253,6 +259,62 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- momo start -->
+                    <div class="product-item momo-transfer">
+                        <div class="container">
+                            <div class="row">
+                                <h3 class="mx-auto text-danger mb-5">Lưu ý: bạn cần cài đặt ứng dụng MoMo trên điện
+                                    thoại để
+                                    thanh toán</h3>
+                                <div class="col-sm-6">
+                                    <div class="payment d-flex flex-column align-items-center mx-auto">
+                                        <h5>Đã cài đặt ví MoMo?</h5>
+                                        <button id="btn-momo-pay" class="btn btn-outline-danger mb-2">Thanh toán ngay</button>
+                                        <a href="#">Cần trợ giúp?</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="install d-flex flex-column align-items-center mx-auto">
+                                        <h5>Chưa cài đặt ví MoMo?</h5>
+                                        <div class="download">
+                                            <img src="../../assets/img/appstore.png" alt="">
+                                            <img src="../../assets/img/googleplay.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- momo end -->
+
+                    <!-- zalo start -->
+                    <div class="product-item zalo-transfer">
+                        <div class="container">
+                            <div class="row">
+                                <h3 class="mx-auto text-danger mb-5">Lưu ý: bạn cần cài đặt ứng dụng ZaloPay trên điện
+                                    thoại để
+                                    thanh toán</h3>
+                                <div class="col-sm-6">
+                                    <div class="payment d-flex flex-column align-items-center mx-auto">
+                                        <h5>Đã cài đặt ZaloPay?</h5>
+                                        <button id="btn-zalo-pay" class="btn btn-outline-danger mb-2">Thanh toán ngay</button>
+                                        <a href="#">Cần trợ giúp?</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="install d-flex flex-column align-items-center mx-auto">
+                                        <h5>Chưa cài đặt ZaloPay?</h5>
+                                        <div class="download">
+                                            <img src="../../assets/img/appstore.png" alt="">
+                                            <img src="../../assets/img/googleplay.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- zalo end -->
 
                 </div>
                 <div class="direct-group">

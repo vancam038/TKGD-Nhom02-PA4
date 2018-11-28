@@ -53,4 +53,35 @@ $(document).ready(function () {
         toggleSPA(mT, mT, mT, mT, mT, mF);
     });
 
+
+    $("#btn-momo-pay").click(() => {
+        window.location.replace("./momo-popup.html");
+    })
+
+    $("#btn-zalo-pay").click(() => {
+        window.location.replace("./zalo-popup.html");
+    })
+
+    $("#btn-back").click(() => {
+        window.location.replace("./index1.html");
+    });
+
+    showSuccessAlert()
 });
+
+function showSuccessAlert() {
+    // var notification = alertify.notify('Giao dịch thành công', 'success', 3, function () {
+    //     showErrorAlert();
+    //     console.log('dismissed');
+    // });
+
+    alertify.alert('Thông báo', 'Giao dịch thành công', function () {
+        showErrorAlert();
+    });
+}
+
+function showErrorAlert() {
+    var notification = alertify.notify('Giao dịch thất bại (for demo only)', 'error', 3, function () {
+        console.log('dismissed');
+    });
+}

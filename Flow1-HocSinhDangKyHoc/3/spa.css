@@ -22,12 +22,14 @@
     align-items: center;
     height: 100%;
     /* overflow: hidden; */
+    background: #FAFAFA;
 }
 
 .momo-popup-wrapper-inner {
     display: grid;
     grid-template-columns: 1fr 3fr;
     height: 100%;
+    background: #fff;
 }
 
 /* left-container start */
@@ -42,36 +44,37 @@
         "order-info"
         "order-id"
         "back-to";
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
 }
 
 .order-timeout {
     grid-area: order-timeout;
-    background: lightcoral;
 }
 
 .order-distributor {
     grid-area: order-distributor;
-    background: lightsalmon;
+    border-top: 1px solid rgba(0, 0, 0, .125);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
 .order-total-price {
     grid-area: order-total-price;
-    background: lightpink;
 }
 
 .order-info {
     grid-area: order-info;
-    background: lightseagreen;
+    border-top: 1px solid rgba(0, 0, 0, .125);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
 .order-id {
     grid-area: order-id;
-    background: lightslategrey;
 }
 
 .back-to {
     grid-area: back-to;
-    background: lightskyblue;
+    border-top: 1px solid rgba(0, 0, 0, .125);
 }
 
 /* left-container end */
@@ -85,24 +88,26 @@
         "logos-section"
         "qrcode-section"
         "signup-section";
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
 }
 
 .logos-section {
     grid-area: logos-section;
-    background: lightgray;
 }
 
 .qrcode-section {
     grid-area: qrcode-section;
-    background: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, .125);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
 }
 
 .signup-section {
     grid-area: signup-section;
-    background: lightgoldenrodyellow;
 }
 
 /* right-container end */
