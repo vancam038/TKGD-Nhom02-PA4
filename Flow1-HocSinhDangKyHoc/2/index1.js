@@ -91,6 +91,7 @@ function showSuccessAlert() {
 
     alertify.alert('Thông báo', 'Phiên giao dịch đã hết hạn', function () {
         // showErrorAlert();
+        window.location.replace("../0_home/index.html");
     });
 }
 

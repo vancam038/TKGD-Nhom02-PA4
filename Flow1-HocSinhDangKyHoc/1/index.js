@@ -40,4 +40,8 @@ $(document).ready(function(){
     $("p").click(function(){
         $(this).hide();
     });
+
+    $("#backToHome").click(function(){
+        window.location.replace("../0_home/index.html");
+    });
 });

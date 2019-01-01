@@ -1,12 +1,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../assets/css/all.css">
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/css/all.css" />
+    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="button.scss" />
     <title>Register</title>
 </head>
 
@@ -14,124 +17,180 @@
     <!-- wrapper start -->
     <div class="wrapper">
         <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark header">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">HSE</a>
+            <a class="navbar-brand" href="javascript:;">
+                <img src="../../assets/img/logo.png" alt="" style="height: 40px" />
+            </a>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+                    <div class="form-content">
+                        <input class="search-header" type="input" placeholder="Tìm kiếm" aria-label="Search" />
+                        <i class="fa-search"></i>
+                    </div>
                 </form>
 
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link menu-icon bell" href="#"></a>
+                        <a class="nav-link menu-icon fa-bell" href="javascript:;"></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link menu-icon book" href="#"></a>
+                        <a class="nav-link menu-icon fa-book" href="javascript:;"></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link menu-icon user" href="#"></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link menu-icon sign-out" href="#">
+                    <li class="nav-item active menu-item-name">
+                        <a class="nav-link menu-icon" href="javascript:;">
+                            <i class="fa-user">Song Văn Cẩm</i>
+                            <div class="submenu"><a href="javascript:;">Logout</a></div>
                         </a>
                     </li>
                 </ul>
-
             </div>
         </nav>
         <!-- navbar end -->
 
-        <!-- hero start -->
-        <div class="hero px-3 py-3">
-            <h3>Tham khảo chương trình học của chúng tôi</h3>
-            <div class="grade-wrapper">
-                <div class="card border-dark text-center" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">Dark card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-                <div class="card border-dark text-center" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">Dark card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-                <div class="card border-dark text-center" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">Dark card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- hero end -->
-
-        <!-- breadcrumb start -->
-        <div class="custom-breadcrumb">
-            <div class="btn-group custom-btn-group">
-                <a href="#" class="btn btn-success">1/ Chọn chương trình học</a>
-                <a href="#" class="btn btn-success">2/ Xác nhận chương trình học</a>
-                <a href="#" class="btn btn-success">3/ Thanh toán</a>
-            </div>
-        </div>
-        <!-- breadcrumb end -->
-
-        <!-- product wrapper start -->
-        <div class="product-wrapper px-3 py-3">
-            <h4>Xác nhận chương trình học</h4>
-            <ul class="navbar-nav guide-container px-2 py-2">
-                <li>Bạn đã đăng ký chương trình học như dưới đây</li>
-                <li>Học phí cần thanh toán: 1.260.000đ</li>
-                <li>Nếu cần chọn lại chương trình thì bạn bấm Chọn lại</li>
-                <li>Bạn nhấn Tiếp tục để chuyển sang thực hiện việc thanh toán</li>
-            </ul>
-            <div class="product-container px-3 py-3">
-                <div class="product-row">
-                    <div class="card border-dark text-center" style="max-width: 25rem;">
-                        <div class="card-body text-dark">
-                            <h5 class="card-title">Dark card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content.</p>
+        <div class="p-2 h-100" style="overflow: hidden">
+            <!-- hero start -->
+            <div class="module mb-5">
+                <header>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <h1 class="font-weight-bold">
+                            Học dễ hơn - Hiểu bài hơn
+                        </h1>
+                        <div class="btn-container mt-3">
+                            <a href="#" id="cta-btn" class="btn1">Học thử ngay</a>
                         </div>
-                        <div class="card-footer">Footer</div>
+                    </div>
+                </header>
+            </div>
+            <!-- hero end -->
+
+            <div class="p-2 whitebox contest mb-5 d-flex justify-content-center align-items-center flex-column ">
+                <h4 class="font-weight-bold">Chương trình luyện thi THPT 2019</h4>
+                <div class="subject-panel-inner mt-2">
+                    <div class="card text-white bg-danger">
+                        <div class="subject-img-container">
+                            <img src="../../assets/img/toan.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body mx-auto p-2">
+                            <p class="card-text">Toán</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-danger">
+                        <div class="subject-img-container">
+                            <img src="../../assets/img/van.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body mx-auto p-2">
+                            <p class="card-text">Ngữ Văn</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-danger">
+                        <div class="subject-img-container">
+                            <img src="../../assets/img/ly.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body mx-auto p-2">
+                            <p class="card-text">Vật Lý</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-danger">
+                        <div class="subject-img-container">
+                            <img src="../../assets/img/anh.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body mx-auto p-2">
+                            <p class="card-text">Tiếng Anh</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-danger">
+                        <div class="subject-img-container">
+                            <img src="../../assets/img/hoa.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body mx-auto p-2">
+                            <p class="card-text">Hóa Học</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-danger">
+                        <div class="subject-img-container">
+                            <img src="../../assets/img/su.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body mx-auto p-2">
+                            <p class="card-text">Lịch sử</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-danger">
+                        <div class="subject-img-container">
+                            <img src="../../assets/img/sinh.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body mx-auto p-2">
+                            <p class="card-text">Sinh Học</p>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-danger">
+                        <div class="subject-img-container">
+                            <img src="../../assets/img/dia.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body mx-auto p-2">
+                            <p class="card-text">Địa Lý</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="direct-group">
-                <button class="btn btn-secondary">Chọn lại</button>
-                <button class="btn btn-success">Tiếp tục</button>
+            <!-- teacher wrapper start -->
+            <div class="p-2 whitebox teacher-wrapper d-flex justify-content-center align-items-center flex-column">
+                <h4 class="font-weight-bold">Đội ngũ giáo viên giàu kinh nghiệm</h4>
+                <div class="owl-carousel owl-theme mt-2">
+                    <div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="../../assets/img/teacher1.png" alt="Avatar" style="border-radius: 50%;width:200px; height: 200px">
+                            <p>Cô Nguyễn Thị Thủy</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="../../assets/img/teacher1.png" alt="Avatar" style="border-radius: 50%;width:200px;height: 200px">
+                            <p>Cô Nguyễn Thị Hoa</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="../../assets/img/teacher.png" alt="Avatar" style="border-radius: 50%;width:200px;height: 200px">
+                            <p>Thầy Đoàn Văn Tố</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="../../assets/img/teacher.png" alt="Avatar" style="border-radius: 50%;width:200px;height: 200px">
+                            <p>Thầy Ngô Đức Minh</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+            <!-- teacher wrapper end -->
         </div>
-        <!-- product wrapper end -->
+
+
 
         <div class="footer">
             <div class="footer-items">
-                <a href="#" class="footer-item px-2 py-2">Cộng đồng</a>
-                <a href="#" class="footer-item px-2 py-2">Hỏi & Đáp</a>
-                <a href="#" class="footer-item px-2 py-2">Học phí</a>
-                <a href="#" class="footer-item px-2 py-2">Đăng ký học</a>
-                <a href="#" class="footer-item px-2 py-2">Liên hệ</a>
-                <a href="#" class="footer-item px-2 py-2">Điều khoản</a>
-                <a href="#" class="footer-item px-2 py-2">Giới thiệu</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Cộng đồng</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Hỏi & Đáp</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Học phí</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Đăng ký học</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Liên hệ</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Điều khoản</a>
+                <a href="javascript:;" class="footer-item px-2 py-2">Giới thiệu</a>
             </div>
-            <div class="copy-right px-2 py-2">
-                <span>@Copyright HSE</span>
-            </div>
+            <div class="copy-right px-2 py-2"><span>@Copyright HSE</span></div>
         </div>
     </div>
     <!-- wrapper end -->
@@ -139,6 +198,8 @@
     <script src="../../assets/js/jquery-3.2.1.min.js"></script>
     <script src="../../assets/js/popper.min.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/owl.carousel.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

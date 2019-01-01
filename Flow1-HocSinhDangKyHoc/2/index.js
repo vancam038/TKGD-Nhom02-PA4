@@ -63,7 +63,7 @@ $(document).ready(function () {
     })
 
     $(".btn-pay").click((e) => {
-        e.preventDefault();
+        // e.preventDefault();
         showSuccessAlert();
     })
 
@@ -83,6 +83,7 @@ function showSuccessAlert() {
     if (cardNum != "" && clientName != "")
         alertify.alert('Thông báo', 'Giao dịch thành công', function () {
             // showErrorAlert();
+            window.location.replace("../0_home/index.html");
         });
     if (cardNum1 != "")
         alertify.alert('Thông báo', 'Giao dịch thành công', function () {
