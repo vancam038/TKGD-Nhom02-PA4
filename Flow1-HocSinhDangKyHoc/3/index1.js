@@ -66,11 +66,21 @@ $(document).ready(function () {
         window.location.replace("./index1.html");
     });
 
-    $('btn').click((e)=> {
+    $('btn').click((e) => {
         e.preventDefault();
     })
 
-    showSuccessAlert();
+
+    var timer = new Timer();
+    timer.start({ countdown: true, startValues: { seconds: 6 } });
+    $('#countdownExample .values').html('<div class="loader"></div>');
+    timer.addEventListener('secondsUpdated', function (e) {
+        $('#countdownExample .values').html(timer.getTimeValues().seconds);
+    });
+    timer.addEventListener('targetAchieved', function (e) {
+        showSuccessAlert()
+    });
+
 });
 
 function showSuccessAlert() {
@@ -79,8 +89,8 @@ function showSuccessAlert() {
     //     console.log('dismissed');
     // });
 
-    alertify.alert('Thông báo', 'Giao dịch thành công (for demo only)', function () {
-        showErrorAlert();
+    alertify.alert('Thông báo', 'Phiên giao dịch đã hết hạn', function () {
+        // showErrorAlert();
     });
 }
 

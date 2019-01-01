@@ -62,15 +62,14 @@ $(document).ready(function () {
         window.location.replace("./zalo-popup.html");
     })
 
-    $(".btn-pay").click(() => {
+    $(".btn-pay").click((e) => {
+        e.preventDefault();
         showSuccessAlert();
     })
 
     $("#btn-back").click(() => {
         window.location.replace("./index1.html");
     });
-
-    // showSuccessAlert()
 });
 
 function showSuccessAlert() {
@@ -78,14 +77,21 @@ function showSuccessAlert() {
     //     showErrorAlert();
     //     console.log('dismissed');
     // });
-
-    alertify.alert('Thông báo', 'Giao dịch thành công (for demo only)', function () {
-        // showErrorAlert();
-    });
+    const clientName = $("#last_name").val();
+    const cardNum = $("#card_num").val();
+    const cardNum1 = $("#card_num1").val();
+    if (cardNum != "" && clientName != "")
+        alertify.alert('Thông báo', 'Giao dịch thành công', function () {
+            // showErrorAlert();
+        });
+    if (cardNum1 != "")
+        alertify.alert('Thông báo', 'Giao dịch thành công', function () {
+            // showErrorAlert();
+        });
 }
 
 function showErrorAlert() {
-    var notification = alertify.notify('Giao dịch thất bại (for demo only)', 'error', 3, function () {
+    var notification = alertify.notify('Giao dịch thất bại', 'error', 3, function () {
         console.log('dismissed');
     });
 }
