@@ -368,15 +368,15 @@
   background: #fe9365;
 }
 
-.checkout-method img {
+.checkout-methods img {
   width: 80%;
 }
 
-.checkout-method .card {
+.checkout-methods .card {
   position: relative;
 }
 
-.checkout-method .extra {
+.checkout-methods .extra {
   width: 60%;
   color: white;
   padding: 5px 0;
