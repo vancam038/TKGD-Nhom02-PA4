@@ -80,7 +80,7 @@ function showSuccessAlert() {
     // });
 
     alertify.alert('Thông báo', 'Giao dịch thành công (for demo only)', function () {
-        showErrorAlert();
+        // showErrorAlert();
     });
 }
 
