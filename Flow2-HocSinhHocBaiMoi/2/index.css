@@ -136,6 +136,10 @@ a:hover {
     grid-gap: .75rem;
 }
 
+.lesson:hover {
+    cursor: pointer;
+}
+
 /* panel end */
 
 /* direct-group start */

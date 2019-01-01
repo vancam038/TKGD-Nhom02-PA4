@@ -16,36 +16,37 @@ $(document).ready(function () {
     });
 
     $("#test-card").click(() => {
-        $(".choice-card").children(".card-body").removeClass("arrow_box");
-        $("#test-card-body").addClass("arrow_box");
         toggleSPA(mT, mF, mT, mT, mT);
     })
 
     $("#brief-card").click(() => {
-        $(".choice-card").children(".card-body").removeClass("arrow_box");
-        $("#brief-card-body").addClass("arrow_box");
         toggleSPA(mF, mT, mT, mT, mT);
     })
 
     $("#pwp-card").click(() => {
-        $(".choice-card").children(".card-body").removeClass("arrow_box");
-        $("#pwp-card-body").addClass("arrow_box");
         toggleSPA(mT, mT, mF, mT, mT);
     })
 
     $("#extra-card").click(() => {
-        $(".choice-card").children(".card-body").removeClass("arrow_box");
-        $("#extra-card-body").addClass("arrow_box");
         toggleSPA(mT, mT, mT, mF, mT);
     })
 
     $("#support-card").click(() => {
-        $(".choice-card").children(".card-body").removeClass("arrow_box");
-        $("#support-card-body").addClass("arrow_box");
         toggleSPA(mT, mT, mT, mT, mF);
     })
 
     $("#btn-back").click(() => {
         window.location.replace("../1/index.html");
     });
+
+    $(".lesson").click(function () {
+        $(".lesson").removeClass("text-white bg-dark font-weight-bold");
+        $(this).addClass("text-white bg-dark font-weight-bold");
+    })
+
+    $(".options-card-group .card").click(function () {
+        $(".choice-card").children(".card-body").removeClass("arrow_box");
+        $(this).children(".card-body").addClass("arrow_box font-weight-bold");
+    })
+
 });
