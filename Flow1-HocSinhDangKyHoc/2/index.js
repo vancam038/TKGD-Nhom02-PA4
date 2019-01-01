@@ -63,7 +63,7 @@ $(document).ready(function () {
     })
 
     $(".btn-pay").click((e) => {
-        // e.preventDefault();
+        e.preventDefault();
         showSuccessAlert();
     })
 
