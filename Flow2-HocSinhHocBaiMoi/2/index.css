@@ -195,4 +195,8 @@ a:hover {
     align-items: center;
 }
 
+.btn-link:hover, .btn-link:focus {
+    text-decoration: none;
+}
+
 /* single-page-wrapper end */
