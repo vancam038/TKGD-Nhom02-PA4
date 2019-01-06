@@ -49,4 +49,19 @@ $(document).ready(function () {
         $(this).children(".card-body").addClass("arrow_box font-weight-bold");
     })
 
+    $("#btn-submit-score").click(() => {
+        showSuccessAlert();
+    })
 });
+
+function showSuccessAlert() {
+    // var notification = alertify.notify('Giao dịch thành công', 'success', 3, function () {
+    //     showErrorAlert();
+    //     console.log('dismissed');
+    // });
+
+    alertify.alert('Thông báo', 'Chúc mừng bạn đã hoàn tất bài kiểm tra!', function () {
+        // showErrorAlert();
+        // window.location.replace("../0_home/index.html");
+    });
+}
