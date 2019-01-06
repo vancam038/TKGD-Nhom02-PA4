@@ -60,7 +60,7 @@ function showSuccessAlert() {
     //     console.log('dismissed');
     // });
 
-    alertify.alert('Thông báo', 'Chúc mừng bạn đã hoàn tất bài kiểm tra!', function () {
+    alertify.alert('Thông báo', 'Bạn trả lời đúng 2/2 câu!', function () {
         // showErrorAlert();
         // window.location.replace("../0_home/index.html");
     });
