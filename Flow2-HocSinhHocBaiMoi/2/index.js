@@ -52,6 +52,32 @@ $(document).ready(function () {
     $("#btn-submit-score").click(() => {
         showSuccessAlert();
     })
+
+    // 
+    $("#btn-send-mess").click(() => {
+        $("#exampleFormControlTextarea1").val("");
+        const mess = `<div class="card text-dark bg-light mb-3">
+        <div class="card-body p-1 d-flex">
+            <img src="../../assets/img/man.png" alt="" width="64px" height="64px">
+            <div class="text-section ml-3 w-100">
+                <div class="name-and-date d-flex justify-content-between">
+                    <h5 class="card-title">Song Văn Cẩm</h5>
+                    <p class="card-text"><small class="text-muted">28/09/2018
+                            15:05PM
+                            Trả lời</small></p>
+                </div>
+                <p class="card-text ml-3">Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit.
+                    Veritatis, minima?</p>
+            </div>
+        </div>
+    </div>`
+
+        $(".list-msg").append(mess);
+
+    })
+
 });
 
 function showSuccessAlert() {
