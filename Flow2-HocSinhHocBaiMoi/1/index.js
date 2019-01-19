@@ -12,8 +12,8 @@ $(document).ready(function () {
     })
 
     $(".chapter-panel-inner .card").click(function () {
-        $(".chapter-panel-inner .card").removeClass("text-white bg-success")
-        $(this).addClass("text-white bg-success")
+        $(".chapter-panel-inner .card").removeClass("text-white bg-info")
+        $(this).addClass("text-white bg-info")
     })
 
     $(".lesson-panel-inner .card").click(function () {
